@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import About from './pages/About';
+import Error from './pages/Error';
 import CustomerService from './pages/CustomerService';
 import KalkulatorPajak from './pages/kalkulatorPajak';
 
@@ -17,6 +18,7 @@ function App() {
             <Route path='/about' element={<About/>} />
             <Route path='/customerService' element={<CustomerService/>} />
             <Route path='/kalkulatorPajak' element={<KalkulatorPajak/>} />
+            <Route path='/error' element={<Error/>} />
         </Routes>
       </BrowserRouter>
     </div>
