@@ -6,6 +6,7 @@ import Photo from '../assets/Photo.jpg';
 import Nauris from '../assets/Nauris.JPG';
 import Dimas from '../assets/Dimas.jpg';
 import Roma from '../assets/Roma.jpeg';
+import Rahmi from '../assets/Rahmi.jpeg';
 import AboutUs from '../assets/AboutUs.jpg';
 import Avatar from '@mui/material/Avatar';
 
@@ -19,7 +20,7 @@ function About() {
           <div className='RowTop'>
             <div className='benner1'>
               <div className='photoProfil'>
-                <Avatar alt="" src={Photo} sx={{ width: 76, height: 76 }}/>
+                <Avatar alt="" src={Rahmi} sx={{ width: 76, height: 76 }}/>
                 <p> Nama : <br/>Social Media : <br/>About Me : </p>
               </div>
             </div>
