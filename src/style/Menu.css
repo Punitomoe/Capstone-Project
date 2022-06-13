@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   background-color: #ebebeb;
+  cursor: default;
 }
 .menu .menuTitle {
   /* font-family: cursive; */
