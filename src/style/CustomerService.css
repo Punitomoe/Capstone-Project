@@ -1,24 +1,117 @@
 .customerService {
     width: 100%;
     height: 90vh;
-    display: flex;
     justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: 50%;
-    background-color: #00a884;
+    background-size: 56.7%;
+    background-color: white;
+  }
+
+  .contactUs {
+    color: #CC2424;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    margin-left: 99px;
+  }
+
+  .csBox {
+    border-radius: 6px;
+    width: 434px;
+    height: 391px;
+    margin-left: 99px;
+    background-color: white;
+    float: left;
+    padding: 17px 21px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .csBox center  {
+    padding-top: 50px;
+  }
+
+  .csBox h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: black !important;
     
+    /* identical to box height */
+    text-align: center;
+  }
+
+  .csBox p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    height: 50px;
+  }
+
+  .csBox button {
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    justify-content: center;
+    background-color: #CC2424;
+    height: 52px;
+    width: 359px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .csBox button:hover {
+    transition: 0.3s ease-in;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
   }
 
   @media only screen and (max-width: 650px) {
     .customerService {
+      height: 130vh;
       justify-content: center;
       align-items: center;
       background-position: center;
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       background-size: 100%;
-      background-color: #00a884;
+      background-color: white;
+    }
+
+    .csBox {
+      border-radius: 6px;
+      width: 217px;
+      height: 330px;
+      background-color: white;
+      padding: 17px 21px;
+      margin-top: 20px;
+      margin-left: 110px;
+
+    }
+    
+    .csBox center {
+      padding-top: 10px;
+    }
+
+    .csBox p {
+      height: 60px;
+    }
+
+    .csBox button {
+      cursor: pointer;
+      justify-content: center;
+      background-color: #CC2424;
+      height: 52px;
+      width: auto;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .contactUs {
+      text-align: center;
+      align-items: center;
+      margin-left: auto;
+      color: white;
     }
   }
