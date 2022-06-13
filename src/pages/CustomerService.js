@@ -18,9 +18,9 @@ function CustomerService() {
             <center><Avatar alt="" src={admin} sx={{ width: 56, height: 56 }}/></center>
             <h1>Talk to a member of our service team</h1>
             <p>We will help you with any obstacle you faced</p>
-            <center><Link to="/error">
-            <button>Contact Customer Service</button>
-            </Link></center>
+            <center>
+            <button><a href='https://wa.me/qr/T6OD62J5F7MYF1'>Contact Customer Service</a></button>
+            </center>
           </div>
 
           <div className='csBox'>
