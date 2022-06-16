@@ -1,13 +1,12 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import '../style/Home.css';
 import WomenJurnal from '../assets/WomenJurnal.jpg';
 import { Link } from "react-router-dom";
+import Layout from '../layout/Layout';
 function Home() {
   return (
     <div>
-        <Navbar/>
+      <Layout>
         <div className='home'>
           <img src={WomenJurnal}/>
             <div className='headerContainer'>
@@ -20,7 +19,7 @@ function Home() {
                 </Link>
             </div>
         </div>
-        <Footer/>
+      </Layout>
     </div>
   )
 }

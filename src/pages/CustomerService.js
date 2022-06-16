@@ -1,6 +1,5 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import Layout from '../layout/Layout';
 import backgroundCS from '../assets/backgroundCS.png';
 import admin from '../assets/admin.png';
 import asker from '../assets/asker.png';
@@ -11,7 +10,7 @@ import { Link } from 'react-router-dom';
 function CustomerService() {
   return (
     <div>
-        <Navbar/>
+        <Layout>
         <div className='customerService' style={{ backgroundImage: `url(${backgroundCS})`}}>
           <h1 className='contactUs'>Contact Us</h1>
           <div className='csBox'>
@@ -32,7 +31,7 @@ function CustomerService() {
             </Link></center>
           </div>
         </div>
-        <Footer/>
+        </Layout>
     </div>
   )
 }

@@ -1,14 +1,13 @@
 import React from 'react'
 import ErrorBackground from '../assets/Error.jpg'
+import Layout from '../layout/Layout';
 import '../style/Error.css';
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom';
 
 function Error() {
   return (
     <div>
-        <Navbar/>
+        <Layout>
             <div className='indexError' style={{ backgroundImage: `url(${ErrorBackground})`}}>
                 <center>
                 <h1>This page is Under Construction</h1>
@@ -17,7 +16,7 @@ function Error() {
                 </Link>
                 </center>
             </div>
-        <Footer/>
+        </Layout>
     </div>
   )
 }

@@ -1,7 +1,5 @@
 import React from 'react'
 import '../style/About.css';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import Photo from '../assets/Photo.jpg';
 import Nauris from '../assets/Nauris.JPG';
 import Dimas from '../assets/Dimas.jpg';
@@ -9,11 +7,12 @@ import Roma from '../assets/Roma.jpeg';
 import Rahmi from '../assets/Rahmi.jpeg';
 import AboutUs from '../assets/AboutUs.jpg';
 import Avatar from '@mui/material/Avatar';
+import Layout from '../layout/Layout';
 
 function About() {
   return (
     <div>
-      <Navbar/>
+      <Layout>
       <div className='title'> Tentang Kami </div>
         <div className='index'>
 
@@ -61,7 +60,7 @@ function About() {
           </div>
 
         </div>
-      <Footer/>
+      </Layout>
     </div>
   )
 }
