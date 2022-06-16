@@ -88,6 +88,10 @@
       background-color: white;
     }
 
+    .Container {
+      display: flex;
+      flex-direction: column;
+    }
     .csBox {
       border-radius: 6px;
       width: 217px;
