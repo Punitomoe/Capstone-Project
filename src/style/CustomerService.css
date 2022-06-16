@@ -4,28 +4,32 @@
     justify-content: center;
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 56.7%;
+    background-size: 100%;
     background-color: white;
     cursor: default;
   }
 
+  .Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .contactUs {
-    color: #CC2424;
+    color: white;
     font-weight: 700;
     font-size: 48px;
-    line-height: 72px;
-    margin-left: 99px;
+    text-align: center;
   }
 
   .csBox {
     border-radius: 6px;
     width: 434px;
     height: 391px;
-    margin-left: 99px;
-    background-color: white;
-    float: left;
+    background-color: white;  
     padding: 17px 21px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px;
   }
 
   .csBox center  {
