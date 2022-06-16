@@ -8,7 +8,7 @@ function MenuItem({ image, name, quote, btn, link }) {
       <center>
         <h1> {name} </h1>
         <p> {quote} </p>
-        <Link to={link}>
+        <Link to={link} >
           <button> {btn} </button>
         </Link>
       </center>

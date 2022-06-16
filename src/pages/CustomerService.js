@@ -24,7 +24,7 @@ function CustomerService() {
             <p>We will help you with any obstacle you faced</p>
             <center>
               <button>
-                <a href="https://wa.me/qr/T6OD62J5F7MYF1">
+                <a href="https://wa.me/qr/T6OD62J5F7MYF1" target="_blank">
                   Contact Customer Service
                 </a>
               </button>
