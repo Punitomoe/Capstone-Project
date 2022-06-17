@@ -1,12 +1,12 @@
 .customerService {
     width: 100%;
-    height: 90vh;
-    justify-content: center;
-    background-position: right;
+    height: auto;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-color: white;
     cursor: default;
+    margin-top: -32px;
   }
 
   .Container {

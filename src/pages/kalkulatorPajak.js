@@ -18,7 +18,8 @@ function kalkulatorPajak() {
           <div className="container">
             <div className="box"></div>
             <div className="box"></div>
-            <div className="box" style={{ backgroundImage: `url(${PajakKendaraan})` }}></div>
+            <div className="box" style={{ backgroundImage: `url(${PajakKendaraan})` }}>
+            </div>
           </div>
         </div>
       </Layout>
