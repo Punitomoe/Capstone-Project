@@ -1,0 +1,55 @@
+.indexPajak {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin-top: -30px;
+  cursor: default;
+  background: linear-gradient(
+    318deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 45, 45, 1) 100%
+  );
+}
+
+.textPajak {
+  color: #ffffff;
+}
+
+.textPajak h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-left: 93px;
+}
+
+.textPajak p {
+  width: 393px;
+  height: 46px;
+  flex-wrap: wrap;
+  font-size: 20px;
+  margin-left: 93px;
+}
+
+.box {
+  border-radius: 6px;
+  width: 317px;
+  height: 430px;
+  background: #fdfaf9;
+  border-radius: 8px;
+  padding: 17px 21px;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pajakSection{
+  background-color: pink;
+}

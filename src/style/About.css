@@ -3,6 +3,7 @@
   height: 80vh;
   background-color: white;
   margin-top: 50px;
+  cursor: default;
   /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -23,6 +24,7 @@
 .title {
   font-size: 60px;
   text-align: center;
+  cursor: default;
 }
 
 .RowTop {

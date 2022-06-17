@@ -5,6 +5,7 @@
     height: 120px;
     background-color: #131313;
     padding-top: 10px;
+    cursor: default;
   }
   
   .footer_left {

@@ -1,17 +1,19 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-// Props untuk memanggil setiap item yang berada pada MenuList.js
-function MenuItem({image, name, quote, btn}) {
+function MenuItem({ image, name, quote, btn, link }) {
   return (
-    <div className='menuItem'>
-        <div style={{ backgroundImage: `url(${image})`}}> </div>
-        <center>
-          <h1> {name} </h1>
-          <p> {quote} </p>
+    <div className="menuItem">
+      <div style={{ backgroundImage: `url(${image})` }}> </div>
+      <center>
+        <h1> {name} </h1>
+        <p> {quote} </p>
+        <Link to={link} >
           <button> {btn} </button>
-        </center>
+        </Link>
+      </center>
     </div>
-  )
+  );
 }
 
-export default MenuItem
+export default MenuItem;
