@@ -1,42 +1,93 @@
 .indexPajak {
   width: 100%;
   height: auto;
-  background-color: white;
+  display: flex;
+  flex-direction: column;
   margin-top: -30px;
   cursor: default;
   background: linear-gradient(
     318deg,
-    rgba(34, 193, 195, 1) 0%,
+    rgba(21, 31, 98, 1) 0%,
     rgba(253, 45, 45, 1) 100%
   );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.indexPajak button {
+  cursor: pointer;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 306px;
+  background-color: #284a6e;
+  color: #eeeeee;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.indexPajak button:hover {
+  background-color: #203c59;
+  color: #dae1e7;
+  transition: 0.3s ease-in;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
 .textPajak {
-  color: #ffffff;
+  color: #eeeeee;
+  margin-left: 93px;
+  flex-wrap: wrap;
 }
 
 .textPajak h1 {
   font-weight: 700;
   font-size: 40px;
-  margin-left: 93px;
 }
 
 .textPajak p {
   width: 393px;
   height: 46px;
-  flex-wrap: wrap;
   font-size: 20px;
-  margin-left: 93px;
 }
 
 .box {
   border-radius: 6px;
   width: 317px;
   height: 430px;
-  background: #fdfaf9;
+  background: #152951;
+  color: #eeeeee;
   border-radius: 8px;
   padding: 17px 21px;
   margin: 20px;
+}
+
+.box h1 {
+  font-size: 40px;
+}
+
+.box label {
+  font-size: 18px;
+  margin: 5px;
+}
+
+.box input {
+  height: 25px;
+  margin: 5px;
+}
+
+.box select {
+  height: 30px;
+  margin: 5px;
+  text-align: center;
+}
+
+.box p {
+  font-size: 16px;
+  margin: 5px;
 }
 
 .container {
@@ -48,8 +99,156 @@
 .container div {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 120%;
 }
-.pajakSection{
-  background-color: pink;
+.karyawanSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.umkmSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.kendaraanSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.kendaraanSection h1 {
+  color: #151f62;
+}
+
+.kendaraanSection p {
+  color: #151f62;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.kendaraanSection a {
+  color: #eeeeee;
+  height: 50px;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.kendaraanSection button {
+  background-color: #1053ba;
+  height: 40px ;
+  width: 300px ;
+  margin-top: 170px ;
+}
+
+.kendaraanSection button:hover {
+  background-color: #0f4599 !important;
+}
+
+.result {
+  height: 30px;
+  background-color: #01909e;
+  font-size: 20px;
+  padding: 2px;
+  text-align: center;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .indexPajak {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .textPajak {
+    flex-wrap: wrap;
+  }
+
+  .textPajak p {
+    height: auto;
+    width: auto;
+  }
+  .box {
+    border-radius: 6px;
+    width: 317px;
+    height: 430px;
+    background: #152951;
+    color: #eeeeee;
+    border-radius: 8px;
+    padding: 17px 21px;
+    margin: 20px;
+  }
+  
+}
+
+@media only screen and (max-width: 800px) {
+  .indexPajak {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+  }
+  .indexPajak button {
+    cursor: pointer;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 190px;
+    background-color: #284a6e;
+    color: #eeeeee;
+    margin: 5px;
+    font-weight: bold;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .container div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+  }
+  .textPajak {
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: left;
+    margin-left: 30px;
+  }
+  .textPajak p {
+    height: auto;
+    width: auto;
+  }
+
+  .box {
+    border-radius: 6px;
+    width: 200px;
+    height: auto;
+    background: #152951;
+    color: #eeeeee;
+    border-radius: 8px;
+    padding: 17px 21px;
+    margin: 20px;
+  }
+  .kendaraanSection a {
+    font-size: 12px ;
+    height: 30px;
+  }
 }
