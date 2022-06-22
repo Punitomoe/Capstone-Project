@@ -44,8 +44,8 @@ function KalkulatorPajak() {
     if (gajiBersih < 54000000) {
       setHasil(0);
     }
-
-    console.log(total);
+    // console.log(gajiBersih);
+    // console.log(setHasil);
 
     if (total <= 50000000) {
       setHasil(total * 0.05);
