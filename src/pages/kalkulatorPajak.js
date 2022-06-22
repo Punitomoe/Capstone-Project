@@ -76,7 +76,7 @@ function KalkulatorPajak() {
             </p>
           </div>
 
-          <div className="container">
+          <div className="containing">
             <div className="box">
               <div className="karyawanSection">
                 <h1>Pajak Karyawan</h1>

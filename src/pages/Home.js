@@ -9,7 +9,7 @@ function Home() {
       <Layout>
         <div className="home">
           <img src={WomenJurnal} />
-          <div className="headerContainer">
+          <div className="headerContaining">
             <h2>Halo Sahabat! Yuk</h2>
             <h1>Makin Ready</h1>
             <h1>Bareng Maturedi!</h1>
