@@ -22,19 +22,22 @@ function kalkulatorPajak() {
                 <h1>Pajak Karyawan</h1>
                 <div>
                   <label>Penghasilan dalam Setahun</label>
-                  <input id="penghasilan"/>
+                  <input id="penghasilan" />
                   <br />
-                  <label>Bonus THR dsb</label><br/>
-                  <input id="thr"/>
-                  <br/>
-                  <label>Status Perkawinan/Tanggungan</label><br/>
+                  <label>Bonus THR dsb</label>
+                  <br />
+                  <input id="thr" />
+                  <br />
+                  <label>Status Perkawinan/Tanggungan</label>
+                  <br />
                   <select>
-                  <option value="tk0">TK/0</option>
-                  <option value="k0">K/0</option>
-                  <option value="k1">K/1</option>
-                  <option value="k2">K/2</option>
-                  <option value="k3">K/3</option>
-                  </select><br/>
+                    <option value="tk0">TK/0</option>
+                    <option value="k0">K/0</option>
+                    <option value="k1">K/1</option>
+                    <option value="k2">K/2</option>
+                    <option value="k3">K/3</option>
+                  </select>
+                  <br />
                 </div>
                 <div>
                   <p>Jumlah Kisaran Pajak yang Harus dibayar:</p>
