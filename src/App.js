@@ -1,5 +1,6 @@
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import About from "./pages/About";
@@ -19,7 +20,10 @@ function App() {
           <Route path="/customerService" element={<CustomerService />} />
           <Route path="/kalkulatorPajak" element={<KalkulatorPajak />} />
           <Route path="/error" element={<Error />} />
-          <Route path="/menu/pajak/pajakKendaraan" element={<PajakKendaraan />} />
+          <Route
+            path="/menu/pajak/pajakKendaraan"
+            element={<PajakKendaraan />}
+          />
         </Routes>
       </BrowserRouter>
     </div>

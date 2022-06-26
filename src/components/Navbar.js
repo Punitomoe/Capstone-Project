@@ -1,45 +1,64 @@
-import React, { useState } from 'react';
-import Logo from '../assets/Logo.png';
+import React from "react";
+import Logo from "../assets/Logo.png";
 import { Link } from "react-router-dom";
-import '../style/Navbar.css';
-import ReorderIcon from '@mui/icons-material/Reorder';
+import "../style/Navbar.css";
 
 function Navbar() {
-    // Variabel dimana akan berubah untuk re-render website dan akan menampilkan perubahan yang dibuat, seperti 'if'
-    const [openLinks, setOpenLinks] = useState(false)
-
-    const toggleNavbar = () => {
-        // Membuat fungsi dimana akan mengubah id value menjadi sebaliknya
-        setOpenLinks(!openLinks);
-    }
-
   return (
-    <div className='navbar'>
-        <div className='leftSide' id={openLinks ? "open" : "close"}>
-            {/* Logo Di Sebelah Kiri Atas */}
-            <img src={Logo} />
-            {/* Link Responsive Ketika Website Seukuran Handphone */}
-            <div className='hiddenLinks'>
-            <Link to="/"> Beranda </Link>
-            <Link to="/menu"> Menu </Link>
-            <Link to="/about"> About </Link>
-            <Link to="/customerService"> CS </Link>
-            <Link to="/kalkulatorPajak" className='NavbarButton'> Kalkulator </Link>
-            </div>
-        </div>
-        {/* Link Button */}
-        <div className='rightSide'>
-            <Link to="/"> Beranda </Link>
-            <Link to="/menu"> Menu </Link>
-            <Link to="/about"> Tentang Kami </Link>
-            <Link to="/customerService"> Customer Service </Link>
-            <Link to="/kalkulatorPajak" className='NavbarButton'> Kalkulator Pajak </Link>
-        <button onClick={toggleNavbar}>
-            <ReorderIcon/>
-        </button>
-        </div>
-    </div>
-  )
-}
+    <>
+      <nav className="col-12 container d-flex justify-content-center  navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container">
+          <div>
+            <img src={Logo} className="navbar-brand" />
+          </div>
 
-export default Navbar
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div className="collapse navbar-collapse " id="navbarNav">
+          <ul className="navbar-nav d-flex align-items-center">
+            <li className="nav-item">
+              <Link className="nav-link " aria-current="page" to="/">
+                Beranda
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/menu">
+                Menu
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">
+                Tentang Kami
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link w-auto" to="/customerService">
+                Customer Service
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link text-light btn btn-danger btn-highlight"
+                to="/kalkulatorPajak"
+              >
+                Kalkulator Pajak
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </>
+  );
+}
+export default Navbar;

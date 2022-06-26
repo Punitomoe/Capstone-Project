@@ -142,9 +142,9 @@
 
 .kendaraanSection button {
   background-color: #1053ba;
-  height: 40px ;
-  width: 300px ;
-  margin-top: 170px ;
+  height: 40px;
+  width: 300px;
+  margin-top: 170px;
 }
 
 .kendaraanSection button:hover {
@@ -189,7 +189,6 @@
     padding: 17px 21px;
     margin: 20px;
   }
-  
 }
 
 @media only screen and (max-width: 800px) {
@@ -249,7 +248,10 @@
     margin: 20px;
   }
   .kendaraanSection a {
-    font-size: 12px ;
+    font-size: 12px;
     height: 30px;
   }
+}
+.pajakSection {
+  background-color: pink;
 }
