@@ -7,6 +7,9 @@ import Error from "./pages/Error";
 import CustomerService from "./pages/CustomerService";
 import KalkulatorPajak from "./pages/kalkulatorPajak";
 import PajakKendaraan from "./pages/PajakKendaraan";
+import Asuransi from "./pages/Asuransi";
+import LegalDokumenKTP from "./pages/LegalDokumenKTP";
+import AsuransiBPJS from "./pages/AsuransiBPJS";
 
 function App() {
   return (
@@ -19,7 +22,9 @@ function App() {
           <Route path="/customerService" element={<CustomerService />} />
           <Route path="/kalkulatorPajak" element={<KalkulatorPajak />} />
           <Route path="/error" element={<Error />} />
-          <Route path="/menu/pajak/pajakKendaraan" element={<PajakKendaraan />} />
+          <Route path="/menu/pajak" element={<PajakKendaraan />} />
+          <Route path="/menu/asuransi" element={<AsuransiBPJS />} />
+          <Route path="/menu/dokumen" element={<LegalDokumenKTP />} />
         </Routes>
       </BrowserRouter>
     </div>

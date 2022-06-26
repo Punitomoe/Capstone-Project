@@ -133,7 +133,7 @@
 }
 
 .kendaraanSection a {
-  color: #eeeeee;
+  color: #4b3a3a;
   height: 50px;
   width: 300px;
   margin-top: 10px;
@@ -252,3 +252,13 @@
     height: 30px;
   }
 }
+
+p {
+  text-indent: 50px;
+  line-height: 1.5;
+}
+
+/* .content{
+  background-image:url(../assets/bgpage.jpg);
+  background-repeat: no-repeat;
+} */

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function PajakKendaraan() {
   return (
-    <div>
+    <div className="content2">
       <Layout>
         <div className="indexKendaraan">
           <div className="breadcrumbs">
@@ -18,36 +18,76 @@ function PajakKendaraan() {
           </div>
           <div className="containing">
             <div className="judul">
-              <h1>Judul Bikin di Sini</h1>
+              <h1>Pajak Kendaraan</h1>
             </div>
             <div className="vidio">
-                
+              <iframe
+                className="vidio"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/djxkz7lFx8A"
+              ></iframe>
             </div>
             <div className="content">
+              <h3>Mengapa perlu membayar pajak kendaraan?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
-                metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
-                interdum tellus elit sed risus. Maecenas eget condimentum velit,
-                sit amet feugiat lectus. Class aptent taciti sociosqu ad litora
-                torquent per conubia nostra, per inceptos himenaeos. Praesent
-                auctor purus luctus enim egestas, ac scelerisque ante pulvinar.
-                Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor
-                urna. Curabitur vel bibendum lorem. Morbi convallis convallis
-                diam sit amet lacinia. Aliquam in elementum tellus. Curabitur
-                tempor quis eros tempus lacinia. Nam bibendum pellentesque quam
-                a convallis. Sed ut vulputate nisi. Integer in felis sed leo
-                vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat
-                ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus
-                lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit
-                amet magna non ligula vestibulum eleifend. Nulla varius volutpat
-                turpis sed lacinia. Nam eget mi in purus lobortis eleifend. Sed
-                nec ante dictum sem condimentum ullamcorper quis venenatis nisi.
-                Proin vitae facilisis nisi, ac posuere leo. Nam pulvinar blandit
-                velit, id condimentum diam faucibus at. Aliquam lacus nisi,
-                sollicitudin at nisi nec, fermentum congue felis. Quisque mauris
-                dolor, fringilla sed tincidunt ac, finibus non odio. Sed vitae
-                mauris nec ante pretium finibus. Donec nisl{" "}
+                Mungkin sobat redi bertanya-tanya, kenapa sih kita haris
+                membayar kendaraan bermotor kita? kan kita sudah bayar buat
+                membeli kendaraan tersebut, kok masih ada ‘iuran’ tahunannya?
+                jadi, kalau kita melihat pada Undang-Undang Nomor 28 tahun 2009
+                tentang Pajak Daerah dan Retribusi Daerah pengertian kendaraan
+                bermotor adalah semua kendaraan beroda beserta gandengannya yang
+                digunakan di semua jenis jalan darat, dan digerakkan oleh
+                peralatan teknik berupa motor atau peralatan lainnya yang
+                berfungsi untuk mengubah suatu sumber daya energi tertentu
+                menjadi tenaga gerak kendaraan bermotor yang bersangkutan,
+                termasuk alat-alat berat dan alat-alat besar yang dalam
+                operasinya menggunakan roda dan motor dan tidak melekat secara
+                permanen serta kendaraan bermotor yang dioperasikan di air. Atas
+                kepemilikan dan atau penguasaaan kendaraan bermotor maka
+                masyarakat ini yang akan dikenai pajak berupa pajak kendaraan
+                bermotor (PKB). Kemudian mengutip dari laman bapenda jabar
+                (2017), hasil dari pajak bermotor kita itu dibagi jadi 5 manfaat
+                yaitu:
+                <br></br>1. Merupakan salah satu sumber pendapatan daerah.
+                <br></br>2. Berguna untuk membiayai penyelenggaraan pemerintahan
+                daerah.
+                <br></br>3. Berguna untuk pembangunan dan atau pemeliharaan
+                jalan serta peningkatan moda dan sarana transportasi umum.
+                <br></br>4. Membantu peningkatan pendapatan Kabupaten/Kota.
+                <br></br>5. Meningkatkan ketenangan dan kepastian hukum bagi
+                wajib pajak. <br></br>Nah jadi karena sobat redi pakai
+                kendaraan, maka diperlukan akses jalan yang optimal juga kan?
+                PKB inilah yang dananya akan dialirkan salah satunya buat
+                pembangunan infrastruktur buat pengguna kendaraan itu sendiri.
+                Selain itu juga sobat redi ikut perperan juga nih buat jadi
+                bagian pembangunan fasilitas-fasilitas tempat tinggal sobat
+                redi. Oh iya karena PKB termasuk pajak daerah, jadi semakin
+                tinggi PKB yang di dapat suatu daerah, atau makin banyak
+                pengguna kendaraan yang bayar pajak di suatu daerah, maka akan
+                makin tinggi juga fasilitas pengguna kendaraan makin optimal.{" "}
+              </p>
+              <h3>Kapan dan bagaimana saya membayar pajak kendaraan saya? </h3>
+              <p>
+                Pembayaran pajak kendaraan dibagi menjadi dua, yaitu pembayaran
+                tahunan dan pembayaran lima tahun sekali yang sekaligus
+                penggantian pelat kendaraan.<br></br>
+                <b>Pajak Kendaraan Bermotor Tahunan</b>
+                <br></br>
+                Pajak Kendaraan Bermotor Tahunan adalah pajak rutin yang harus
+                dibayarkan setiap tahunnya seperti layaknya Pajak Penghasilan
+                (PPh). Bisa dibayarkan secara offline yaitu datang ke samsat
+                yang sesuai dengan daerah dikeluarkannya STNK pemilik atau
+                online melalui e-samsat, e-commerce, atau pembayaran mobile
+                banking juga sudah tersedia. namun untuk kertas stnk tetap harus
+                datang ke samsat untuk dapat yang baru.<br></br>
+                <b>Pajak Kendaraan Bermotor</b>
+                <br></br>
+                Lima Tahunan Pajak Kendaraan Bermotor Lima Tahunan adalah pajak
+                rutin yang harus dibayarkan setiap lima tahun sekali. Pajak ini
+                ditandai dengan pergantian pelat nomor kendaraan dan STNK.
+                Khusus PKB lima tahunan, setiap wajib pajak harus datang ke
+                kantor SAMSAT untuk melakukan pembayaran.
               </p>
             </div>
           </div>
