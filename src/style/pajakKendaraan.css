@@ -1,0 +1,92 @@
+.indexKendaraan {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    cursor: default;
+}
+
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    border-radius: 2px;
+    border: 2px;
+    background-color: wheat;
+    width: auto;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color:#CC2424;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.containing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.judul {
+
+}
+
+.vidio {
+    width: 724px;
+    height: 385px;
+    background-color: wheat;
+}
+
+.content {
+    width: 724px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .breadcrumbs {
+        width: auto;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .vidio {
+        width: auto;
+        height: 385px;
+    }
+    .content {
+        width: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .breadcrumbs {
+        width: auto;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .vidio {
+        width: auto;
+        height: 385px;
+    }
+    .content {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+  }
+  
