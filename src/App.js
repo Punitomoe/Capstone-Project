@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Error from "./pages/Error";
 import CustomerService from "./pages/CustomerService";
 import KalkulatorPajak from "./pages/kalkulatorPajak";
+import Perpajakan from "./pages/Perpajakan";
 import PajakKendaraan from "./pages/PajakKendaraan";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/customerService" element={<CustomerService />} />
           <Route path="/kalkulatorPajak" element={<KalkulatorPajak />} />
           <Route path="/error" element={<Error />} />
+          <Route path="/menu/pajak" element={<Perpajakan />} />
           <Route
             path="/menu/pajak/pajakKendaraan"
             element={<PajakKendaraan />}
