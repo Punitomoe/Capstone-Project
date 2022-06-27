@@ -55,7 +55,6 @@
 }
 
 .box {
-  border-radius: 6px;
   width: 317px;
   height: 430px;
   background: #152951;
@@ -120,6 +119,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: stretch;
+  margin-bottom: auto;
 }
 
 .kendaraanSection h1 {
@@ -142,9 +142,9 @@
 
 .kendaraanSection button {
   background-color: #1053ba;
-  height: 40px;
-  width: 300px;
-  margin-top: 170px;
+  height: 40px ;
+  width: 300px ;
+  margin-top: 170px ;
 }
 
 .kendaraanSection button:hover {
@@ -162,7 +162,7 @@
 
 @media only screen and (max-width: 1300px) {
   .indexPajak {
-    width: 100%;
+    width: auto;
     height: auto;
     margin-top: 10px;
   }
@@ -180,25 +180,30 @@
     width: auto;
   }
   .box {
-    border-radius: 6px;
-    width: 317px;
-    height: 430px;
-    background: #152951;
-    color: #eeeeee;
-    border-radius: 8px;
-    padding: 17px 21px;
+    width: auto;
+    height: auto;
     margin: 20px;
   }
+  .kendaraanSection a {
+    margin-top: auto;
+  }
+  .kendaraanSection button {
+    height: 40px ;
+    width: 300px ;
+    margin-top: auto ;
+  }
+  
 }
 
 @media only screen and (max-width: 800px) {
   .indexPajak {
-    width: 100%;
+    width: auto;
     height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 0px;
+    /* margin-bottom: 120px; */
   }
   .indexPajak button {
     cursor: pointer;
@@ -209,10 +214,6 @@
     border-radius: 5px;
     height: 30px;
     width: 200px;
-    background-color: #284a6e;
-    color: #eeeeee;
-    margin: 5px;
-    font-weight: bold;
   }
 
   .containing {
@@ -239,19 +240,20 @@
 
   .box {
     border-radius: 6px;
-    width: 230px;
+    width: auto;
     height: auto;
-    background: #152951;
-    color: #eeeeee;
     border-radius: 8px;
     padding: 17px 21px;
     margin: 20px;
   }
   .kendaraanSection a {
-    font-size: 12px;
-    height: 30px;
+    font-size: 12px ;
+    height: auto;
+    margin-top: auto;
   }
-}
-.pajakSection {
-  background-color: pink;
+  .kendaraanSection button {
+    height: 40px ;
+    width: 300px ;
+    margin-top: 170px ;
+  }
 }
