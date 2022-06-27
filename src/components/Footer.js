@@ -25,7 +25,7 @@ function Footer() {
         <div class="container-fluid text-center text-md-left ">
           <div className="row footer-grid">
             <div className="content-left">
-              <img src={logoFooter} className="footer-img" />
+              <img src={logoFooter} className="footer-img" alt=""/>
               <p className="footer-year"> &copy; 2022 maturedi.com </p>
             </div>
 

@@ -28,7 +28,7 @@ function About() {
               </div>
             </div>
 
-            <img className="background" src={AboutUs} />
+            <img className="background" src={AboutUs} alt=""/>
 
             <div className="benner2">
               <div className="photoProfil">

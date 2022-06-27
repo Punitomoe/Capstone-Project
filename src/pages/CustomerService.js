@@ -30,7 +30,7 @@ function CustomerService() {
               <div>
               <center>
                 <button>
-                  <a href="https://wa.me/qr/T6OD62J5F7MYF1" target="_blank">
+                  <a href="https://wa.me/qr/T6OD62J5F7MYF1" target="_blank" rel="noreferrer">
                     Contact Customer Service
                   </a>
                 </button>
