@@ -10,7 +10,7 @@ function Menu() {
       <Layout>
         <div className="menu">
           <h1 className="menuTitle">Jelajahi Sekarang!</h1>
-          <div className="menuList">
+          <div className="menuList mb-3">
             {MenuList.map((menuItem, key) => {
               return (
                 <MenuItem

@@ -7,34 +7,21 @@ import logoFooter from "../assets/logoFooter.png";
 
 function Footer() {
   return (
-    <div className="footerr">
-      {/* <div className="footer_left">
-        <img src={logoFooter} />
-        <p>Media Social Kami</p>
-      </div>
-
-      <div className="footer_right">
-        <InstagramIcon />
-        <FacebookIcon />
-        <LinkedInIcon />
-        <p> &copy; 2022 maturedi.com </p>
-      </div> */}
-
-      {/* <!-- Footer --> */}
-      <div class="page-footer font-small bg-dark pt-4">
-        <div class="container-fluid text-center text-md-left ">
+    <div className="footer bg-dark ">
+      <div class="container font-small pt-2 pb-2">
+        <div class="container text-center text-md-left ">
           <div className="row footer-grid">
             <div className="content-left">
               <img src={logoFooter} className="footer-img" />
-              <p className="footer-year"> &copy; 2022 maturedi.com </p>
+              <h6> &copy; 2022 maturedi.com </h6>
             </div>
 
-            <div class=" content-right">
-              <p>Media Social Kami</p>
-              <div className="footer-icon">
-                <InstagramIcon />
-                <WhatsAppIcon />
-                <LinkedInIcon />
+            <div class="content-right">
+              <h6 className="footer-h6">Media Social Kami</h6>
+              <div>
+                <InstagramIcon className="footer-icon" />
+                <WhatsAppIcon className="footer-icon" />
+                <LinkedInIcon className="footer-icon" />
               </div>
             </div>
           </div>
