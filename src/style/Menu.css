@@ -9,9 +9,9 @@
   cursor: default;
 }
 .menu .menuTitle {
-  /* font-family: cursive; */
   font-size: 45px;
   text-align: center;
+  margin-top: 15px;
 }
 
 .menuList {
