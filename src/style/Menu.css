@@ -52,10 +52,15 @@
   width: 200px;
   background-color: #cc2424;
   color: white;
+  margin-top: 50px;
+}
+
+.menuItem a {
+  text-decoration: none;
 }
 
 .menuItem button:hover {
-  background-color: #c73139;
+  background-color: #9a252b;
   color: white;
   transition: 0.3s ease-in;
 }
