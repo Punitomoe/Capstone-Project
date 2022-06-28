@@ -23,7 +23,7 @@
   border: none;
   border-radius: 5px;
   height: 30px;
-  width: 306px;
+  width: 265px;
   background-color: #284a6e;
   color: #eeeeee;
   margin: 5px;
@@ -41,6 +41,7 @@
   color: #eeeeee;
   margin-left: 93px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .textPajak h1 {
@@ -56,7 +57,7 @@
 
 .box {
   width: 317px;
-  height: 430px;
+  height: 530px;
   background: #152951;
   color: #eeeeee;
   border-radius: 8px;
@@ -98,7 +99,7 @@
 .containing div {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: cover;
 }
 .karyawanSection {
   display: flex;
@@ -117,8 +118,7 @@
 .kendaraanSection {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: stretch;
+  align-items: center;
   margin-bottom: auto;
 }
 
@@ -130,6 +130,9 @@
   color: #151f62;
   font-size: 18px;
   font-weight: 100;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .kendaraanSection a {
@@ -143,8 +146,8 @@
 .kendaraanSection button {
   background-color: #1053ba;
   height: 40px ;
-  width: 300px ;
-  margin-top: 170px ;
+  width: 265px ;
+  margin-top: 150px ;
 }
 
 .kendaraanSection button:hover {
