@@ -90,10 +90,15 @@
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .vidio {
+    width: auto;
+    height: 385px;
+    background-color: white;
+  }
+  .vidio iframe {
     width: auto;
     height: 385px;
   }
