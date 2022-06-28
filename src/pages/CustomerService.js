@@ -25,7 +25,7 @@ function CustomerService() {
                 <h1>Talk to a member of our service team</h1>
               </div>
               <div>
-                <p>We will help you with any obstacle you faced</p>
+                <p>We will help you with any obstacle you faced.</p>
               </div>
               <div>
                 <center>
@@ -52,7 +52,7 @@ function CustomerService() {
               <div>
                 <p>
                   You are not the only one who asking this, take a look the
-                  answer for your questions
+                  answer for your questions.
                 </p>
               </div>
               <center>

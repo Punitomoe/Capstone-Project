@@ -34,11 +34,15 @@
     margin-top: 90px;
   }
 
+  .csBox center {
+    margin-top: 20px;
+  }
+
   .csBox h1 {
     font-weight: 700;
     font-size: 20px;
     color: black !important;
-    margin-bottom: 50px;
+    margin-top: 30px;
     
     /* identical to box height */
     text-align: center;
@@ -64,6 +68,7 @@
   }
 
   .csBox button:hover {
+    background-color: #9a252b;
     transition: 0.3s ease-in;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
   }
