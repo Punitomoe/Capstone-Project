@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "../layout/Layout";
-import backgroundCS from "../assets/backgroundCS.png";
-import admin from "../assets/admin.png";
-import asker from "../assets/asker.png";
+import Layout from "../../layout/Layout";
+import backgroundCS from "../../assets/backgroundCS.png";
+import admin from "../../assets/admin.png";
+import asker from "../../assets/asker.png";
 import Avatar from "@mui/material/Avatar";
-import "../style/CustomerService.css";
+import "../../style/pages/CustomerService.css";
 import { Link } from "react-router-dom";
 
 function CustomerService() {

@@ -1,10 +1,17 @@
-import React from "react";
-import "../style/Home.css";
+import React, { useEffect } from "react";
+import "../../style/pages/Home.css";
+import Layout from "../../layout/Layout";
 import { Link } from "react-router-dom";
-import WomenJurnal from "../assets/WomenJurnal.png";
-import Layout from "../layout/Layout";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import WomenJurnal from "../../assets/WomenJurnal.png";
 
 function Home() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <>
       <Layout>

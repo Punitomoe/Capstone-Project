@@ -1,16 +1,16 @@
-import Layout from "../layout/Layout";
-import "../style/SubMenu.css";
-import Mobil from "../assets/asuransi/Mobil.png";
-import BPJS from "../assets/asuransi/BPJS.png";
+import Layout from "../../../layout/Layout";
+import "../../../style/SubMenu.css";
+import KTP from "../../../assets/dokumen/KTP.png";
+import Pengurusan from "../../../assets/dokumen/Pengurusan.png";
 
-function Asuransi() {
+function LegalDokumen() {
   return (
     <>
       <Layout>
         <div className="padding-y-xxl position-relative pt-3 pb-5 mb-5 z-index-1">
           <div className="max-width-adaptive-sm position-relative z-index-2 container">
             <div className="text-component margin-bottom-sm  pt-5 mb-5 text-center">
-              <h2 className="sub_menu_title">Asuransi</h2>
+              <h2 className="sub_menu_title">Legal Dokumen</h2>
             </div>
           </div>
           <div className="container">
@@ -20,12 +20,14 @@ function Asuransi() {
                   <div className="sub-menu">
                     <img
                       className="card-img-top img-sub-menu img-fluid"
-                      src={Mobil}
+                      src={KTP}
                       alt=""
                     />
                   </div>
                   <div className="p-2">
-                    <h5 className="card-sub-title text-center">Asuransi Mobil</h5>
+                    <h5 className="card-sub-title text-center">
+                      Sistem Pembuatan KTP
+                    </h5>
                   </div>
                 </div>
               </div>
@@ -34,12 +36,14 @@ function Asuransi() {
                   <div className="sub-menu">
                     <img
                       className="card-img-top img-sub-menu img-fluid"
-                      src={BPJS}
+                      src={Pengurusan}
                       alt=""
                     />
                   </div>
                   <div className="p-2">
-                    <h5 className="card-sub-title text-center">BPJS Mobil</h5>
+                    <h5 className="card-sub-title text-center">
+                      Pengurusan Kendaraan Hilang
+                    </h5>
                   </div>
                 </div>
               </div>
@@ -51,4 +55,4 @@ function Asuransi() {
   );
 }
 
-export default Asuransi;
+export default LegalDokumen;

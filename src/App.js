@@ -1,16 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
-import Home from "./pages/Home";
-import Menu from "./pages/Menu";
-import About from "./pages/About";
+import Home from "./pages/home/Home";
+import Menu from "./pages/menu/Menu";
+import About from "./pages/about/About";
 import Error from "./pages/Error";
-import CustomerService from "./pages/CustomerService";
-import KalkulatorPajak from "./pages/kalkulatorPajak";
-import Perpajakan from "./pages/Perpajakan";
-import Asuransi from "./pages/Asuransi";
+import CustomerService from "./pages/cs/CustomerService";
+import KalkulatorPajak from "./pages/calculator/kalkulatorPajak";
+import Perpajakan from "./pages/menu/submenu/Perpajakan";
+import Asuransi from "./pages/menu/submenu/Asuransi";
+import LegalDokumen from "./pages/menu/submenu/LegalDokumen";
 import PajakKendaraan from "./pages/PajakKendaraan";
-import LegalDokumen from "./pages/LegalDokumen";
 
 function App() {
   return (
