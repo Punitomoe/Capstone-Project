@@ -9,7 +9,7 @@ function Navbar() {
       <nav className="col-12 container d-flex justify-content-center  navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <div>
-            <img src={Logo} className="navbar-brand" />
+            <img src={Logo} className="navbar-brand" alt=""/>
           </div>
 
           <button

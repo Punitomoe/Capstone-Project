@@ -16,25 +16,29 @@ function CustomerService() {
           style={{ backgroundImage: `url(${backgroundCS})` }}
         >
           <h1 className="contactUs">Contact Us</h1>
-          <div className="Container">
+          <div className="contained">
             <div className="csBox">
               <center>
                 <Avatar alt="" src={admin} sx={{ width: 56, height: 56 }} />
               </center>
               <div>
-              <h1>Talk to a member of our service team</h1>
+                <h1>Talk to a member of our service team</h1>
               </div>
               <div>
-              <p>We will help you with any obstacle you faced</p>
+                <p>We will help you with any obstacle you faced.</p>
               </div>
               <div>
-              <center>
-                <button>
-                  <a href="https://wa.me/qr/T6OD62J5F7MYF1" target="_blank">
-                    Contact Customer Service
-                  </a>
-                </button>
-              </center>
+                <center>
+                  <button>
+                    <a
+                      href="https://wa.me/qr/T6OD62J5F7MYF1"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Contact Customer Service
+                    </a>
+                  </button>
+                </center>
               </div>
             </div>
 
@@ -43,13 +47,13 @@ function CustomerService() {
                 <Avatar alt="" src={asker} sx={{ width: 56, height: 56 }} />
               </center>
               <div>
-              <h1>Frequently Asked Questions</h1>
+                <h1>Frequently Asked Questions</h1>
               </div>
               <div>
-              <p>
-                You are not the only one who asking this, take a look the answer
-                for your questions
-              </p>
+                <p>
+                  You are not the only one who asking this, take a look the
+                  answer for your questions.
+                </p>
               </div>
               <center>
                 <Link to="/error">
