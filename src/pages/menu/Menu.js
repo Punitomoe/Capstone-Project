@@ -1,8 +1,8 @@
 import React from "react";
-import Layout from "../layout/Layout";
-import { MenuList } from "../data/MenuList";
-import MenuItem from "../components/MenuItem";
-import "../style/Menu.css";
+import Layout from "../../layout/Layout";
+import { MenuList } from "../../data/MenuList";
+import MenuItem from "../../components/MenuItem";
+import "../../style/pages/Menu.css";
 
 function Menu() {
   return (

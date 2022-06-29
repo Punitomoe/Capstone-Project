@@ -1,8 +1,8 @@
-import Layout from "../layout/Layout";
-import "../style/SubMenu.css";
-import Kendaraan from "../assets/perpajakan/Kendaraan.png";
-import Karyawan from "../assets/perpajakan/Karyawan.png";
-import Usaha from "../assets/perpajakan/Usaha.png";
+import Layout from "../../../layout/Layout";
+import "../../../style/SubMenu.css";
+import Kendaraan from "../../../assets/perpajakan/Kendaraan.png";
+import Karyawan from "../../../assets/perpajakan/Karyawan.png";
+import Usaha from "../../../assets/perpajakan/Usaha.png";
 
 function Perpajakan() {
   return (

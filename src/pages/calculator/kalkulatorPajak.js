@@ -1,6 +1,6 @@
-import Layout from "../layout/Layout";
-import "../style/kalkulatorPajak.css";
-import PajakKendaraan from "../assets/PajakKendaraan.png";
+import Layout from "../../layout/Layout";
+import "../../style/pages/kalkulatorPajak.css";
+import PajakKendaraan from "../../assets/PajakKendaraan.png";
 import Button from "@mui/material/Button";
 import { useState } from "react";
 
@@ -12,9 +12,9 @@ function KalkulatorPajak() {
   const [omzetValue, setOmzetValue] = useState(0);
   const [omzetResult, setOmzetResult] = useState(0);
 
-
-  const addCommas = num => num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  const removeNonNumeric = num => num.toString().replace(/[^0-9]/g, "");
+  const addCommas = (num) =>
+    num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  const removeNonNumeric = (num) => num.toString().replace(/[^0-9]/g, "");
 
   const handleTanggungan = (e) => {
     const jenis = e.target.value;
@@ -44,20 +44,31 @@ function KalkulatorPajak() {
     let gajiBersih = parseInt(penghasilan) + parseInt(bonus);
     let tanggunganAkhir = parseInt(tanggungan) + 54000000;
     let total = gajiBersih - tanggunganAkhir;
-    if (gajiBersih <  50000000) {
-
-      setHasil(0)
-    }else{
-    console.log(gajiBersih);
+    if (gajiBersih < 50000000) {
+      setHasil(0);
+    } else {
+      console.log(gajiBersih);
 
       if (total <= 50000000) {
         setHasil(addCommas(removeNonNumeric(total * 0.05)));
       } else if (total <= 300000000) {
-        setHasil(addCommas(removeNonNumeric((total - 50000000) * 0.15 + 2500000)));
+        setHasil(
+          addCommas(removeNonNumeric((total - 50000000) * 0.15 + 2500000))
+        );
       } else if (total <= 750000000) {
-        setHasil(addCommas(removeNonNumeric((total - 300000000) * 0.25 + 25000000 + 37500000)));
+        setHasil(
+          addCommas(
+            removeNonNumeric((total - 300000000) * 0.25 + 25000000 + 37500000)
+          )
+        );
       } else {
-        setHasil(addCommas(removeNonNumeric((total - 750000000) * 0.3 + 25000000 + 37500000 + 125000000)) );
+        setHasil(
+          addCommas(
+            removeNonNumeric(
+              (total - 750000000) * 0.3 + 25000000 + 37500000 + 125000000
+            )
+          )
+        );
       }
     }
     // console.log(gajiBersih);
@@ -151,7 +162,11 @@ function KalkulatorPajak() {
                 </p>
                 <div>
                   <Button variant="contained">
-                    <a href="https://e-samsat.id/" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://e-samsat.id/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Kunjungi E-Samsat
                     </a>
                   </Button>

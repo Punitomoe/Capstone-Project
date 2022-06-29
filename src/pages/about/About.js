@@ -1,11 +1,11 @@
 import React from "react";
-import "../style/About.css";
-import Nauris from "../assets/Nauris.png";
-import Dimas from "../assets/Dimas.png";
-import Roma from "../assets/Roma.png";
-import Rahmi from "../assets/Rahmi.png";
-import Yoram from "../assets/Yoram.png";
-import Layout from "../layout/Layout";
+import "../../style/pages/About.css";
+import Nauris from "../../assets/about/Nauris.png";
+import Dimas from "../../assets/about/Dimas.png";
+import Roma from "../../assets/about/Roma.png";
+import Rahmi from "../../assets/about/Rahmi.png";
+import Yoram from "../../assets/about/Yoram.png";
+import Layout from "../../layout/Layout";
 
 function About() {
   return (
