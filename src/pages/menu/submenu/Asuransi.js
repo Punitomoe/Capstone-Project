@@ -2,6 +2,7 @@ import Layout from "../../../layout/Layout";
 import "../../../style/SubMenu.css";
 import Mobil from "../../../assets/asuransi/Mobil.png";
 import BPJS from "../../../assets/asuransi/BPJS.png";
+import { Link } from "react-router-dom";
 
 function Asuransi() {
   return (
@@ -16,34 +17,44 @@ function Asuransi() {
           <div className="container">
             <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
               <div className="col h-auto ">
-                <div className="card m-3 card-sub-menu border-0">
-                  <div className="sub-menu">
-                    <img
-                      className="card-img-top img-sub-menu img-fluid"
-                      src={Mobil}
-                      alt=""
-                    />
+                <Link
+                  to="/menu/asuransi/AsuransiKendaraan"
+                  className="text-decoration-none text-secondary"
+                >
+                  <div className="card m-3 card-sub-menu border-0">
+                    <div className="sub-menu">
+                      <img
+                        className="card-img-top img-sub-menu img-fluid"
+                        src={Mobil}
+                        alt=""
+                      />
+                    </div>
+                    <div className="p-2">
+                      <h5 className="card-sub-title text-center">
+                        Asuransi Mobil
+                      </h5>
+                    </div>
                   </div>
-                  <div className="p-2">
-                    <h5 className="card-sub-title text-center">
-                      Asuransi Mobil
-                    </h5>
-                  </div>
-                </div>
+                </Link>
               </div>
               <div className="col h-auto ">
-                <div className="card m-3 card-sub-menu border-0">
-                  <div className="sub-menu">
-                    <img
-                      className="card-img-top img-sub-menu img-fluid"
-                      src={BPJS}
-                      alt=""
-                    />
+                <Link
+                  to="/menu/asuransi/AsuransiBPJS"
+                  className="text-decoration-none text-secondary"
+                >
+                  <div className="card m-3 card-sub-menu border-0">
+                    <div className="sub-menu">
+                      <img
+                        className="card-img-top img-sub-menu img-fluid"
+                        src={BPJS}
+                        alt=""
+                      />
+                    </div>
+                    <div className="p-2">
+                      <h5 className="card-sub-title text-center">BPJS Mobil</h5>
+                    </div>
                   </div>
-                  <div className="p-2">
-                    <h5 className="card-sub-title text-center">BPJS Mobil</h5>
-                  </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>

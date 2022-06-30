@@ -3,6 +3,7 @@ import "../../../style/SubMenu.css";
 import Kendaraan from "../../../assets/perpajakan/Kendaraan.png";
 import Karyawan from "../../../assets/perpajakan/Karyawan.png";
 import Usaha from "../../../assets/perpajakan/Usaha.png";
+import { Link } from "react-router-dom";
 
 function Perpajakan() {
   return (
@@ -17,50 +18,67 @@ function Perpajakan() {
           <div className="container">
             <div className="row row-cols-1 row-cols-md-3 g-4">
               <div className="col h-auto ">
-                <div className="card m-3 card-sub-menu border-0">
-                  <div className="sub-menu">
-                    <img
-                      className="card-img-top img-sub-menu img-fluid"
-                      src={Kendaraan}
-                      alt=""
-                    />
+                <Link
+                  to="/menu/pajak/PajakKendaraan"
+                  className="text-decoration-none text-secondary"
+                >
+                  <div className="card m-3 card-sub-menu border-0 ">
+                    <div className="sub-menu ">
+                      <img
+                        className="card-img-top img-sub-menu img-fluid"
+                        src={Kendaraan}
+                        alt=""
+                      />
+                    </div>
+                    <div className="p-2">
+                      <h5 className="card-sub-title text-center">
+                        Pajak Kendaraan
+                      </h5>
+                    </div>
                   </div>
-                  <div className="p-2">
-                    <h5 className="card-sub-title text-center">
-                      Pajak Kendaraan
-                    </h5>
-                  </div>
-                </div>
+                </Link>
               </div>
               <div className="col h-auto ">
-                <div className="card m-3 card-sub-menu border-0">
-                  <div className="sub-menu">
-                    <img
-                      className="card-img-top img-sub-menu img-fluid"
-                      src={Karyawan}
-                      alt=""
-                    />
+                <Link
+                  to="/menu/pajak/PajakKaryawan"
+                  className="text-decoration-none text-secondary"
+                >
+                  <div className="card m-3 card-sub-menu border-0">
+                    <div className="sub-menu">
+                      <img
+                        className="card-img-top img-sub-menu img-fluid"
+                        src={Karyawan}
+                        alt=""
+                      />
+                    </div>
+                    <div className="p-2">
+                      <h5 className="card-sub-title text-center">
+                        Pajak Karyawan
+                      </h5>
+                    </div>
                   </div>
-                  <div className="p-2">
-                    <h5 className="card-sub-title text-center">
-                      Pajak Karyawan
-                    </h5>
-                  </div>
-                </div>
+                </Link>
               </div>
               <div className="col h-auto ">
-                <div className="card m-3 card-sub-menu border-0">
-                  <div className="sub-menu">
-                    <img
-                      className="card-img-top img-sub-menu img-fluid"
-                      src={Usaha}
-                      alt=""
-                    />
+                <Link
+                  to="/menu/pajak/PajakKUsaha"
+                  className="text-decoration-none text-secondary"
+                >
+                  <div className="card m-3 card-sub-menu border-0">
+                    <div className="sub-menu">
+                      <img
+                        className="card-img-top img-sub-menu img-fluid"
+                        src={Usaha}
+                        alt=""
+                      />
+                    </div>
+                    <div className="p-2">
+                      <h5 className="card-sub-title text-center">
+                        Pajak Usaha
+                      </h5>
+                    </div>
                   </div>
-                  <div className="p-2">
-                    <h5 className="card-sub-title text-center">Pajak Usaha</h5>
-                  </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>

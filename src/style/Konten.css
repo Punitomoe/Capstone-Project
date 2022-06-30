@@ -10,15 +10,19 @@
   flex-direction: row;
   font-size: 16px;
   border-radius: 2px;
-  border: 2px;
-  background-color: wheat;
-  width: auto;
-  padding-left: 50px;
-  padding-top: 12px;
-  /* padding-bottom: 10px; */
+  border: 0px solid #9f9f9f;
+  /* border-color: #9f9f9f; */
+  background-color: #ffffff;
+  /* width: auto; */
   margin-left: 100px;
   margin-right: 100px;
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-top: 12px;
+  /* padding-bottom: 12px; */
+  /* justify-content: center; */
   color: #cc2424;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .breadcrumbs a {
@@ -41,6 +45,8 @@
 
 .containing h1 {
   font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .judul {
@@ -60,9 +66,23 @@
 .content {
   width: 724px;
 }
+
+.content h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
 .content p {
   text-align: justify;
 }
+
+.content ul {
+  text-align: justify;
+}
+.content li {
+  text-align: justify;
+}
+
 
 @media only screen and (max-width: 1300px) {
   .breadcrumbs {

@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../layout/Layout";
-import "../style/pajakKendaraan.css";
+import "../style/Konten.css";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { Link } from "react-router-dom";
 
 function PajakKendaraan() {
   return (
-    <div className="content2">
+    <>
       <Layout>
         <div className="indexKendaraan">
           <div className="breadcrumbs">
@@ -27,7 +27,7 @@ function PajakKendaraan() {
                   width="724"
                   height="385"
                   src="https://www.youtube.com/embed/djxkz7lFx8A"
-                  alt=""
+                  url="/"
                 />
               </div>
               <div className="content">
@@ -110,7 +110,7 @@ function PajakKendaraan() {
           </div>
         </div>
       </Layout>
-    </div>
+    </>
   );
 }
 export default PajakKendaraan;
