@@ -23,11 +23,11 @@ function LegalDokumenSIM() {
             </div>
             <div className="vidio">
               <iframe
-                  title="Vidio Edukasi Pajak Kendaraan Bermotor"
+                  title="d'Tutorial Pembuatan SIM"
                 width="724"
                 height="385"
                 src="https://www.youtube.com/embed/QDSZxPKy6kA"
-                url="/"
+                alt="d'Tutorial Pembuatan SIM"
               />
             </div>
             <div className="content">

@@ -23,11 +23,11 @@ function AsuransiKendaraan() {
               </div>
               <div className="vidio">
                 <iframe
-                  title="Vidio Edukasi Pajak Kendaraan Bermotor"
+                  title="Tips Memilih Asuransi Mobil Terbaik"
                   width="724"
                   height="385"
                   src="https://www.youtube.com/embed/4ZzwwhLGBA4"
-                  url="/"
+                  alt="Tips Memilih Asuransi Mobil Terbaik"
                 />
               </div>
               <div className="content">

@@ -23,11 +23,11 @@ function AsuransiBPJS() {
             </div>
             <div className="vidio">
               <iframe
-                title="Tips Memilih Asuransi Mobil Terbaik"
+                title="Sosialisasi Jaminan Kesehatan Nasional BPJS Kesehatan"
                 width="724"
                 height="385"
-                src="https://youtu.be/XwBX-VHX2Y8"
-                url="Tips Memilih Asuransi Mobil Terbaik"
+                src="https://www.youtube.com/embed/XwBX-VHX2Y8"
+                alt="Sosialisasi Jaminan Kesehatan Nasional BPJS Kesehatan"
               />
             </div>
             <div className="content">

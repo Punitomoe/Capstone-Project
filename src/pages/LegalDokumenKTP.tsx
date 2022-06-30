@@ -23,11 +23,11 @@ function LegalDokumenKTP() {
             </div>
             <div className="vidio">
               <iframe
-                  title="Vidio Edukasi Pajak Kendaraan Bermotor"
+                  title="Sering Diminta Fotokopi, Apa Saja Sih Teknologi di e-KTP | Tech It Easy"
                 width="724"
                 height="385"
                 src="https://www.youtube.com/embed/QXmVaZZMg8E"
-                url="/"
+                alt="Sering Diminta Fotokopi, Apa Saja Sih Teknologi di e-KTP | Tech It Easy"
               />
             </div>
             <div className="content">

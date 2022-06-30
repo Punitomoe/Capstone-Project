@@ -27,7 +27,7 @@ function PajakKendaraan() {
                   width="724"
                   height="385"
                   src="https://www.youtube.com/embed/djxkz7lFx8A"
-                  url="/"
+                  alt="Vidio Edukasi Pajak Kendaraan Bermotor"
                 />
               </div>
               <div className="content">
