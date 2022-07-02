@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import calculatorReducer from "../features/calculator/calculatorSlice";
+import hasilReducer from "../features/calculator/hasilSlice";
+import omzetResultReducer from "../features/calculator/omzetResultSlice";
 
 export const store = configureStore({
   reducer: {
-    calculator: calculatorReducer,
+    hasil: hasilReducer,
+    omzetResult: omzetResultReducer,
   },
 });

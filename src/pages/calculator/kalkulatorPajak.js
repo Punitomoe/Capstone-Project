@@ -3,14 +3,21 @@ import "../../style/pages/kalkulatorPajak.css";
 import PajakKendaraan from "../../assets/PajakKendaraan.png";
 import Button from "@mui/material/Button";
 import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { calculate } from "../../features/calculator/hasilSlice";
+import { calculate as calculateOmzet } from "../../features/calculator/omzetResultSlice";
 
 function KalkulatorPajak() {
   const [penghasilan, setPenghasilan] = useState(0);
   const [bonus, setBonus] = useState(0);
   const [tanggungan, setTanggungan] = useState(0);
-  const [hasil, setHasil] = useState(0);
+  // const [hasil, setHasil] = useState(0);
   const [omzetValue, setOmzetValue] = useState(0);
-  const [omzetResult, setOmzetResult] = useState(0);
+  // const [omzetResult, setOmzetResult] = useState(0);
+
+  const hasil = useSelector((state) => state.hasil.value);
+  const omzetResult = useSelector((state) => state.omzetResult.value);
+  const dispatch = useDispatch();
 
   const addCommas = (num) =>
     num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -45,27 +52,33 @@ function KalkulatorPajak() {
     let tanggunganAkhir = parseInt(tanggungan) + 54000000;
     let total = gajiBersih - tanggunganAkhir;
     if (gajiBersih < 50000000) {
-      setHasil(0);
+      dispatch(calculate(0));
     } else {
       console.log(gajiBersih);
 
       if (total <= 50000000) {
-        setHasil(addCommas(removeNonNumeric(total * 0.05)));
+        dispatch(calculate(addCommas(removeNonNumeric(total * 0.05))));
       } else if (total <= 300000000) {
-        setHasil(
-          addCommas(removeNonNumeric((total - 50000000) * 0.15 + 2500000))
+        dispatch(
+          calculate(
+            addCommas(removeNonNumeric((total - 50000000) * 0.15 + 2500000))
+          )
         );
       } else if (total <= 750000000) {
-        setHasil(
-          addCommas(
-            removeNonNumeric((total - 300000000) * 0.25 + 25000000 + 37500000)
+        dispatch(
+          calculate(
+            addCommas(
+              removeNonNumeric((total - 300000000) * 0.25 + 25000000 + 37500000)
+            )
           )
         );
       } else {
-        setHasil(
-          addCommas(
-            removeNonNumeric(
-              (total - 750000000) * 0.3 + 25000000 + 37500000 + 125000000
+        dispatch(
+          calculate(
+            addCommas(
+              removeNonNumeric(
+                (total - 750000000) * 0.3 + 25000000 + 37500000 + 125000000
+              )
             )
           )
         );
@@ -77,7 +90,7 @@ function KalkulatorPajak() {
 
   const handleOmzet = () => {
     if (omzetValue < 4800000000) {
-      setOmzetResult(addCommas(removeNonNumeric(omzetValue * 0.005)));
+      dispatch(calculateOmzet(addCommas(removeNonNumeric(omzetValue * 0.005))));
     }
   };
 
