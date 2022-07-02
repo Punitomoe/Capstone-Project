@@ -1,9 +1,9 @@
-import { render, fireEvent, waitFor, screen } from "@testing-library/react";
+import { render, fireEvent, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Home from "../pages/Home";
+import Home from "../pages/home/Home";
 import { BrowserRouter, Router } from "react-router-dom";
 import { createMemoryHistory } from "history";
-import Menu from "../pages/Menu";
+import Menu from "../pages/menu/Menu";
 
 test("should render header text", () => {
   render(

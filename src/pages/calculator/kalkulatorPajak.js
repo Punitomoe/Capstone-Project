@@ -54,7 +54,7 @@ function KalkulatorPajak() {
     if (gajiBersih < 50000000) {
       dispatch(calculate(0));
     } else {
-      console.log(gajiBersih);
+      // console.log(gajiBersih);
 
       if (total <= 50000000) {
         dispatch(calculate(addCommas(removeNonNumeric(total * 0.05))));
@@ -114,24 +114,40 @@ function KalkulatorPajak() {
                 <input
                   id="penghasilan"
                   type="number"
+                  data-testid="penghasilan"
                   onChange={(e) => setPenghasilan(e.target.value)}
                 />
                 <label>Bonus THR dan sebagainya :</label>
                 <input
                   id="thr"
                   type="number"
+                  data-testid="bonus"
                   onChange={(e) => setBonus(e.target.value)}
                 />
                 <label>Status Perkawinan/Tanggungan</label>
-                <select onChange={handleTanggungan}>
-                  <option>TK/0</option>
-                  <option>K/0</option>
-                  <option>K/1</option>
-                  <option>K/2</option>
-                  <option>K/3</option>
+                <select onChange={handleTanggungan} data-testid="select">
+                  <option data-testid="select-option" value="TK/0">
+                    TK/0
+                  </option>
+                  <option data-testid="select-option" value="K/0">
+                    K/0
+                  </option>
+                  <option data-testid="select-option" value="K/1">
+                    K/1
+                  </option>
+                  <option data-testid="select-option" value="K/2">
+                    K/2
+                  </option>
+                  <option data-testid="select-option" value="K/3">
+                    K/3
+                  </option>
                 </select>
                 <div>
-                  <Button variant="contained" onClick={hitungHasil}>
+                  <Button
+                    variant="contained"
+                    onClick={hitungHasil}
+                    data-testid="jumlahkaryawan"
+                  >
                     Jumlah
                   </Button>
                 </div>
@@ -148,10 +164,15 @@ function KalkulatorPajak() {
                 <label>Omzet penghasilan dalam setahun :</label>
                 <input
                   type="number"
+                  data-testid="umkm"
                   onChange={(e) => setOmzetValue(e.target.value)}
                 />
                 <div>
-                  <Button variant="contained" onClick={handleOmzet}>
+                  <Button
+                    variant="contained"
+                    onClick={handleOmzet}
+                    data-testid="jumlahumkm"
+                  >
                     Jumlah
                   </Button>
                 </div>

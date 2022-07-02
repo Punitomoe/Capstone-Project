@@ -9,7 +9,6 @@ export const hasilSlice = createSlice({
   initialState,
   reducers: {
     calculate: (state, action) => {
-      console.log(action);
       state.value = action.payload;
     },
   },
