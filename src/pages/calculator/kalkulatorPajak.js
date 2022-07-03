@@ -1,4 +1,3 @@
-import Layout from "../../layout/Layout";
 import "../../style/pages/kalkulatorPajak.css";
 import PajakKendaraan from "../../assets/PajakKendaraan.png";
 import Button from "@mui/material/Button";
@@ -96,120 +95,118 @@ function KalkulatorPajak() {
 
   return (
     <div>
-      <Layout>
-        <div className="indexPajak">
-          <div className="textPajak">
-            <h1> Kalkulator Pajak </h1>
-            <p>
-              {" "}
-              Hitung kisaran pajak yang harus kamu bayarkan di Kalkulator Pajak!{" "}
-            </p>
-          </div>
+      <div className="indexPajak">
+        <div className="textPajak">
+          <h1> Kalkulator Pajak </h1>
+          <p>
+            {" "}
+            Hitung kisaran pajak yang harus kamu bayarkan di Kalkulator Pajak!{" "}
+          </p>
+        </div>
 
-          <div className="containing">
-            <div className="box">
-              <div className="karyawanSection">
-                <h1>Pajak Karyawan</h1>
-                <label>Penghasilan dalam Setahun :</label>
-                <input
-                  id="penghasilan"
-                  type="number"
-                  data-testid="penghasilan"
-                  onChange={(e) => setPenghasilan(e.target.value)}
-                />
-                <label>Bonus THR dan sebagainya :</label>
-                <input
-                  id="thr"
-                  type="number"
-                  data-testid="bonus"
-                  onChange={(e) => setBonus(e.target.value)}
-                />
-                <label>Status Perkawinan/Tanggungan</label>
-                <select onChange={handleTanggungan} data-testid="select">
-                  <option data-testid="select-option" value="TK/0">
-                    TK/0
-                  </option>
-                  <option data-testid="select-option" value="K/0">
-                    K/0
-                  </option>
-                  <option data-testid="select-option" value="K/1">
-                    K/1
-                  </option>
-                  <option data-testid="select-option" value="K/2">
-                    K/2
-                  </option>
-                  <option data-testid="select-option" value="K/3">
-                    K/3
-                  </option>
-                </select>
-                <div>
-                  <Button
-                    variant="contained"
-                    onClick={hitungHasil}
-                    data-testid="jumlahkaryawan"
-                  >
-                    Jumlah
-                  </Button>
-                </div>
-                <div>
-                  <p>Jumlah kisaran pajak yang harus dibayar :</p>
-                  <div className="result">Rp. {hasil}</div>
-                </div>
+        <div className="containing">
+          <div className="box">
+            <div className="karyawanSection">
+              <h1>Pajak Karyawan</h1>
+              <label>Penghasilan dalam Setahun :</label>
+              <input
+                id="penghasilan"
+                type="number"
+                data-testid="penghasilan"
+                onChange={(e) => setPenghasilan(e.target.value)}
+              />
+              <label>Bonus THR dan sebagainya :</label>
+              <input
+                id="thr"
+                type="number"
+                data-testid="bonus"
+                onChange={(e) => setBonus(e.target.value)}
+              />
+              <label>Status Perkawinan/Tanggungan</label>
+              <select onChange={handleTanggungan} data-testid="select">
+                <option data-testid="select-option" value="TK/0">
+                  TK/0
+                </option>
+                <option data-testid="select-option" value="K/0">
+                  K/0
+                </option>
+                <option data-testid="select-option" value="K/1">
+                  K/1
+                </option>
+                <option data-testid="select-option" value="K/2">
+                  K/2
+                </option>
+                <option data-testid="select-option" value="K/3">
+                  K/3
+                </option>
+              </select>
+              <div>
+                <Button
+                  variant="contained"
+                  onClick={hitungHasil}
+                  data-testid="jumlahkaryawan"
+                >
+                  Jumlah
+                </Button>
               </div>
-            </div>
-
-            <div className="box">
-              <div className="umkmSection">
-                <h1>Pajak UMKM</h1>
-                <label>Omzet penghasilan dalam setahun :</label>
-                <input
-                  type="number"
-                  data-testid="umkm"
-                  onChange={(e) => setOmzetValue(e.target.value)}
-                />
-                <div>
-                  <Button
-                    variant="contained"
-                    onClick={handleOmzet}
-                    data-testid="jumlahumkm"
-                  >
-                    Jumlah
-                  </Button>
-                </div>
-                <div>
-                  <p>Jumlah kisaran pajak yang harus dibayar:</p>
-                  <div className="result">Rp. {omzetResult}</div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="box"
-              style={{ backgroundImage: `url(${PajakKendaraan})` }}
-            >
-              <div className="kendaraanSection">
-                <h1>Pajak Kendaraan</h1>
-                <p>
-                  Pajak kendaraan cenderung memiliki nilai pasti yang tidak
-                  terpengaruh pada besaran pendapatan pengguna dan sudah
-                  ditentukan oleh pihak samsat
-                </p>
-                <div>
-                  <Button variant="contained">
-                    <a
-                      href="https://e-samsat.id/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Kunjungi E-Samsat
-                    </a>
-                  </Button>
-                </div>
+              <div>
+                <p>Jumlah kisaran pajak yang harus dibayar :</p>
+                <div className="result">Rp. {hasil}</div>
               </div>
             </div>
           </div>
         </div>
-      </Layout>
+
+        <div className="box">
+          <div className="umkmSection">
+            <h1>Pajak UMKM</h1>
+            <label>Omzet penghasilan dalam setahun :</label>
+            <input
+              type="number"
+              data-testid="umkm"
+              onChange={(e) => setOmzetValue(e.target.value)}
+            />
+            <div>
+              <Button
+                variant="contained"
+                onClick={handleOmzet}
+                data-testid="jumlahumkm"
+              >
+                Jumlah
+              </Button>
+            </div>
+            <div>
+              <p>Jumlah kisaran pajak yang harus dibayar:</p>
+              <div className="result">Rp. {omzetResult}</div>
+            </div>
+          </div>
+
+          <div
+            className="box"
+            style={{ backgroundImage: `url(${PajakKendaraan})` }}
+          >
+            <div className="kendaraanSection">
+              <h1>Pajak Kendaraan</h1>
+              <p>
+                Pajak kendaraan cenderung memiliki nilai pasti yang tidak
+                terpengaruh pada besaran pendapatan pengguna dan sudah
+                ditentukan oleh pihak samsat
+              </p>
+              <div>
+                <Button variant="contained">
+                  <a
+                    href="https://e-samsat.id/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Kunjungi E-Samsat
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

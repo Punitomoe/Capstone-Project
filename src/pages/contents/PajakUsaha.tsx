@@ -1,23 +1,21 @@
 import React from "react";
-import Layout from "../layout/Layout";
-import "../style/Konten.css";
+import "../../style/Konten.css";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { Link } from "react-router-dom";
 
-function PajakUsaha() {
+const PajakUsaha = () => {
   return (
     <>
-      <Layout>
-        <div className="indexKendaraan">
-          <div className="breadcrumbs">
-            <Link to="/menu"> Menu </Link>
-            <NavigateNextIcon />
-            <Link to="/menu/pajak"> Pajak </Link>
-            <NavigateNextIcon />
-            <p>Pajak Usaha</p>
-          </div>
-          <div className="containing">
-          <center>
+      <div className="indexKendaraan">
+        <div className="breadcrumbs">
+          <Link to="/menu"> Menu </Link>
+          <NavigateNextIcon />
+          <Link to="/menu/pajak"> Pajak </Link>
+          <NavigateNextIcon />
+          <p>Pajak Usaha</p>
+        </div>
+        <div className="containing">
+          <div className="text-center">
             <div className="judul">
               <h1>Pajak Usaha</h1>
             </div>
@@ -27,7 +25,6 @@ function PajakUsaha() {
                 width="724"
                 height="385"
                 src="https://www.youtube.com/embed/SuYBHrVe1gg"
-                alt="Penghitungan PPh Orang Pribadi Usaha/Pekerjaan Bebas"
               />
             </div>
             <div className="content">
@@ -57,11 +54,10 @@ function PajakUsaha() {
                 pajak terdekat atau online melalui djponline.pajak.go.id
               </p>
             </div>
-            </center>
           </div>
         </div>
-      </Layout>
+      </div>
     </>
   );
-}
+};
 export default PajakUsaha;

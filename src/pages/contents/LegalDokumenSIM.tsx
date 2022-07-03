@@ -1,33 +1,30 @@
 import React from "react";
-import Layout from "../layout/Layout";
-import "../style/Konten.css";
+import "../../style/Konten.css";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { Link } from "react-router-dom";
 
-function LegalDokumenSIM() {
+const LegalDokumenSIM = () => {
   return (
     <>
-      <Layout>
-        <div className="indexKendaraan">
-          <div className="breadcrumbs">
-            <Link to="/menu"> Menu </Link>
-            <NavigateNextIcon />
-            <Link to="/menu/dokumen"> Legal Dokumen </Link>
-            <NavigateNextIcon />
-            <p>SIM</p>
-          </div>
-          <div className="containing">
-          <center>
+      <div className="indexKendaraan">
+        <div className="breadcrumbs">
+          <Link to="/menu"> Menu </Link>
+          <NavigateNextIcon />
+          <Link to="/menu/dokumen"> Legal Dokumen </Link>
+          <NavigateNextIcon />
+          <p>SIM</p>
+        </div>
+        <div className="containing">
+          <div className="text-center">
             <div className="judul">
               <h1>Pengurusan pembuatan SIM</h1>
             </div>
             <div className="vidio">
               <iframe
-                  title="d'Tutorial Pembuatan SIM"
+                title="d'Tutorial Pembuatan SIM"
                 width="724"
                 height="385"
                 src="https://www.youtube.com/embed/QDSZxPKy6kA"
-                alt="d'Tutorial Pembuatan SIM"
               />
             </div>
             <div className="content">
@@ -145,11 +142,10 @@ function LegalDokumenSIM() {
                 dan identifikasi forensik Kepolisian.
               </p>
             </div>
-            </center>
           </div>
         </div>
-      </Layout>
+      </div>
     </>
   );
-}
+};
 export default LegalDokumenSIM;

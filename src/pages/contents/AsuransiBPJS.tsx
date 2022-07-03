@@ -1,37 +1,49 @@
 import React from "react";
-import Layout from "../layout/Layout";
-import "../style/Konten.css";
+import "../../style/Konten.css";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { Link } from "react-router-dom";
 
-function AsuransiBPJS() {
+const AsuransiBPJS = () => {
   return (
     <>
-      <Layout>
-        <div className="indexKendaraan">
-          <div className="breadcrumbs">
-            <Link to="/menu"> Menu </Link>
-            <NavigateNextIcon />
-            <Link to="/menu/asuransi"> Asuransi </Link>
-            <NavigateNextIcon />
-            <p>Asuransi BPJS</p>
-          </div>
-          <div className="containing">
-            <center>
-              <div className="judul">
-                <h1>BPJS Kesehatan</h1>
-              </div>
-              <div className="vidio">
-                <iframe
-                  title="Sosialisasi Jaminan Kesehatan Nasional BPJS Kesehatan"
-                  width="724"
-                  height="385"
-                  src="https://www.youtube.com/embed/XwBX-VHX2Y8"
-                  alt="Sosialisasi Jaminan Kesehatan Nasional BPJS Kesehatan"
-                />
-              </div>
-              <div className="content">
-                <h3>Bagaimana prosedur pendaftaran dan pembayaran?</h3>
+      <div className="indexKendaraan">
+        <div className="breadcrumbs">
+          <Link to="/menu"> Menu </Link>
+          <NavigateNextIcon />
+          <Link to="/menu/asuransi"> Asuransi </Link>
+          <NavigateNextIcon />
+          <p>Asuransi BPJS</p>
+        </div>
+        <div className="containing">
+          <div className="text-center">
+            <div className="judul">
+              <h1>BPJS Kesehatan</h1>
+            </div>
+            <div className="vidio">
+              <iframe
+                title="Tips Memilih Asuransi Mobil Terbaik"
+                width="724"
+                height="385"
+                src="https://www.youtube.com/embed/XwBX-VHX2Y8"
+              />
+            </div>
+            <div className="content">
+              <h3>Bagaimana prosedur pendaftaran dan pembayaran?</h3>
+              <p>
+                BPJS atau Badan Penyelenggara Jaminan Sosial memiliki fungsi
+                sebagai penyelenggara kesehatan masyarakat yang memiliki sistem
+                yang kompleks dan bertingkat. Nah kalau sobat redi mau daftar,
+                sobat harus tau sobat di sini sebagai apa? apakah pribadi?
+                didaftarkan pemerintah? perusahaan? atau mendaftarkan anak sobat
+                yang baru lahir? dari berbagai macam latar belakang dari
+                pendaftaran BPJS ini, proses administrasi pendaftaran pada
+                setiap kanal layanan administrasi dilakukan dengan ketentuan:
+                <br></br>1. Mengisi FDIPE (Formulir Daftar Isian Peserta
+                Elektronik);
+                <br></br>2. Melengkapi persyaratan administrasi sesuai dengan
+                layanan yang dibutuhkan; dan
+                <br></br>3. Memberikan persetujuan layanan administrasi. .{" "}
+                <br></br>
                 <p>
                   BPJS atau Badan Penyelenggara Jaminan Sosial memiliki fungsi
                   sebagai penyelenggara kesehatan masyarakat yang memiliki
@@ -149,12 +161,12 @@ function AsuransiBPJS() {
                   pelayanan online bisa kita akses secara mobile di JKN Mobile!
                   praktis banget.
                 </p>
-              </div>
-            </center>
+              </p>
+            </div>
           </div>
         </div>
-      </Layout>
+      </div>
     </>
   );
-}
+};
 export default AsuransiBPJS;
