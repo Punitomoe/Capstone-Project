@@ -1,23 +1,21 @@
 import React from "react";
-import Layout from "../layout/Layout";
-import "../style/Konten.css";
+import "../../style/Konten.css";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { Link } from "react-router-dom";
 
-function AsuransiBPJS() {
+const AsuransiBPJS = () => {
   return (
     <>
-      <Layout>
-        <div className="indexKendaraan">
-          <div className="breadcrumbs">
-            <Link to="/menu"> Menu </Link>
-            <NavigateNextIcon />
-            <Link to="/menu/asuransi"> Asuransi </Link>
-            <NavigateNextIcon />
-            <p>Asuransi BPJS</p>
-          </div>
-          <div className="containing">
-          <center>
+      <div className="indexKendaraan">
+        <div className="breadcrumbs">
+          <Link to="/menu"> Menu </Link>
+          <NavigateNextIcon />
+          <Link to="/menu/asuransi"> Asuransi </Link>
+          <NavigateNextIcon />
+          <p>Asuransi BPJS</p>
+        </div>
+        <div className="containing">
+          <div className="text-center">
             <div className="judul">
               <h1>BPJS Kesehatan</h1>
             </div>
@@ -27,7 +25,6 @@ function AsuransiBPJS() {
                 width="724"
                 height="385"
                 src="https://youtu.be/XwBX-VHX2Y8"
-                url="Tips Memilih Asuransi Mobil Terbaik"
               />
             </div>
             <div className="content">
@@ -138,11 +135,10 @@ function AsuransiBPJS() {
                 mobile di JKN Mobile! praktis banget.
               </p>
             </div>
-            </center>
           </div>
         </div>
-      </Layout>
+      </div>
     </>
   );
-}
+};
 export default AsuransiBPJS;

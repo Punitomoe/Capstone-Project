@@ -1,33 +1,30 @@
 import React from "react";
-import Layout from "../layout/Layout";
-import "../style/Konten.css";
+import "../../style/Konten.css";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { Link } from "react-router-dom";
 
-function LegalDokumenKTP() {
+const LegalDokumenKTP = () => {
   return (
     <>
-      <Layout>
-        <div className="indexKendaraan">
-          <div className="breadcrumbs">
-            <Link to="/menu"> Menu </Link>
-            <NavigateNextIcon />
-            <Link to="/menu/dokumen"> Legal Dokumen </Link>
-            <NavigateNextIcon />
-            <p>KTP</p>
-          </div>
-          <div className="containing">
-          <center>
+      <div className="indexKendaraan">
+        <div className="breadcrumbs">
+          <Link to="/menu"> Menu </Link>
+          <NavigateNextIcon />
+          <Link to="/menu/dokumen"> Legal Dokumen </Link>
+          <NavigateNextIcon />
+          <p>KTP</p>
+        </div>
+        <div className="containing">
+          <div className="text-center">
             <div className="judul">
               <h1>Sistem pembuatan KTP</h1>
             </div>
             <div className="vidio">
               <iframe
-                  title="Vidio Edukasi Pajak Kendaraan Bermotor"
+                title="Vidio Edukasi Pajak Kendaraan Bermotor"
                 width="724"
                 height="385"
                 src="https://www.youtube.com/embed/QXmVaZZMg8E"
-                url="/"
               />
             </div>
             <div className="content">
@@ -96,11 +93,10 @@ function LegalDokumenKTP() {
                 <br></br>9. Membuat BPJS kesehatan dan BPJS ketenagakerjaan.
               </p>
             </div>
-            </center>
           </div>
         </div>
-      </Layout>
+      </div>
     </>
   );
-}
+};
 export default LegalDokumenKTP;

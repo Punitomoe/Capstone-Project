@@ -1,16 +1,19 @@
 import React from "react";
-import Logo from "../assets/Logo.png";
 import { Link } from "react-router-dom";
 import "../style/components/Navbar.css";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <>
       <nav className="col-12 container d-flex justify-content-center  navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <div>
             <Link to="/">
-              <img src={Logo} className="navbar-brand" alt="" />
+              <img
+                src={require("../assets/Logo.png")}
+                className="navbar-brand"
+                alt=""
+              />
             </Link>
           </div>
 
@@ -62,5 +65,5 @@ function Navbar() {
       </nav>
     </>
   );
-}
+};
 export default Navbar;
