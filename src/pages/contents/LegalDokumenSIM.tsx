@@ -39,12 +39,10 @@ const LegalDokumenSIM = () => {
                 <br></br>- Usia
                 <br></br>- Administrasi Kesehatan
                 <br></br>- Lulus ujian
-                <br></br>
-                <br></br>
-                <b>Usia Persyaratan</b>
-                <br></br>Usia untuk penerbitan SIM baru harus memenuhi ketentuan
-                usia paling rendah yang disesuaikan dengan jenis SIM.
-                <li>
+                <h3 className="text-center">Usia Persyaratan</h3>
+                Usia untuk penerbitan SIM baru harus memenuhi ketentuan usia
+                paling rendah yang disesuaikan dengan jenis SIM.
+                <li className="mt-2">
                   17 (tujuh belas) tahun untuk SIM A, SIM C, SIM D dann SIM DI{" "}
                 </li>
                 <li>18 (delapan belas) tahun untuk SIM CI </li>
@@ -55,12 +53,13 @@ const LegalDokumenSIM = () => {
                 <li>23 (dua puluh tiga) tahun untuk SIM BII umum.</li>
                 <br></br>
                 <br></br>
-                <b>Syarat membuat SIM </b>
-                <br></br>
-                Kemudian, persyaratan administrasi untuk penerbitan SIM
-                dilakukan dengan ketentuan:
-                <br></br>1. Mengisi dan menyerahkan formulir pendaftaran SIM
-                secara manual atau menunjukkan tanda bukti pendaftaran secara
+                <h3 className="text-center">Syarat membuat SIM </h3>
+                <div className="mb-2">
+                  Kemudian, persyaratan administrasi untuk penerbitan SIM
+                  dilakukan dengan ketentuan:
+                </div>
+                1. Mengisi dan menyerahkan formulir pendaftaran SIM secara
+                manual atau menunjukkan tanda bukti pendaftaran secara
                 elektronik.
                 <br></br>2. Melampirkan fotokopi dan memperlihatkan identitas
                 diri Kartu Tanda Penduduk (KTP) elektronik bagi WNI atau dokumen
@@ -104,21 +103,23 @@ const LegalDokumenSIM = () => {
                 psikologi dibuktikan dengan surat keterangan lulus tes
                 psikologi, dan dapat digunakan paling lama 6 (enam) bulan sejak
                 diterbitkan.<br></br>
-                <b>Biaya pembuatan/penerbitan SIM baru </b>
+                <h3 className="text-center">
+                  Biaya pembuatan/penerbitan SIM baru{" "}
+                </h3>
                 <br></br>
                 <ul>
-                  Biaya bikin baru SIM A adalah Rp 120.000 per penerbitan.
+                  1. Biaya bikin baru SIM A adalah Rp 120.000 per penerbitan.
                 </ul>
                 <ul>
-                  Biaya bikin baru SIM B I maupun SIM B II adalah Rp 120.000 per
-                  penerbitan.
-                </ul>
-                <ul>
-                  Biaya bikin baru SIM C, SIM C I, SIM C II adalah Rp 100.000
+                  2. Biaya bikin baru SIM B I maupun SIM B II adalah Rp 120.000
                   per penerbitan.
                 </ul>
                 <ul>
-                  Biaya bikin baru SIM D maupun SIM D II adalah Rp 50.000 per
+                  3. Biaya bikin baru SIM C, SIM C I, SIM C II adalah Rp 100.000
+                  per penerbitan.
+                </ul>
+                <ul>
+                  4. Biaya bikin baru SIM D maupun SIM D II adalah Rp 50.000 per
                   penerbitan.
                 </ul>
               </p>
@@ -134,8 +135,10 @@ const LegalDokumenSIM = () => {
                 pernyataan yang ditentukan berdasarkan Undang-Undang Nomor 22
                 tahun 2009 tentang Lalu Lintas dan Angkutan Jalan.
                 <br></br>
-                <br></br>Fungsi SIM (surat ijin mengemudi) adalah :<br></br>1.
-                Sebagai bukti kompetensi mengemudi,
+                <div className="mb-2 mt-4">
+                  Fungsi SIM (surat ijin mengemudi) adalah :
+                </div>
+                1. Sebagai bukti kompetensi mengemudi,
                 <br></br>2. Sebagai registrasi pengemudi kendaraan bermotor yang
                 memuat keterangan identitas lengkap pengemudi,
                 <br></br>3. Untuk mendukung kegiatan penyelidikan, penyidikan
