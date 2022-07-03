@@ -6,15 +6,15 @@ import { Link } from "react-router-dom";
 
 function Perpajakan() {
   return (
-    <>
+    <div className="containing">
       <div className="padding-y-xxl position-relative pt-3 pb-5 mb-5 z-index-1 sub-menu">
         <div className="max-width-adaptive-sm position-relative z-index-2 container">
           <div className="text-component margin-bottom-sm  pt-5 mb-5 text-center">
             <h2 className="sub_menu_title">Perpajakan</h2>
           </div>
         </div>
-        <div className="container">
-          <div className="row row-cols-1 row-cols-md-3 g-4">
+        <div  className="flexbox">
+          <div className="">
             <div className="col h-auto ">
               <Link
                 to="/menu/pajak/PajakKendaraan"
@@ -79,7 +79,7 @@ function Perpajakan() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
