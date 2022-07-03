@@ -11,8 +11,9 @@
 
   .contained {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .contactUs {
@@ -78,9 +79,9 @@
     text-decoration: none;
   }
 
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 1300px) {
     .customerService {
-      height: 130vh;
+      height: 100vh;
       justify-content: center;
       align-items: center;
       background-position: center;
@@ -91,16 +92,19 @@
 
     .contained {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+
     }
     .csBox {
       border-radius: 6px;
-      width: 217px;
-      height: 330px;
+      width: 434px;
+      height: auto;
       background-color: white;
       padding: 17px 21px;
-      margin-top: 20px;
-      margin-left: 110px;
+      margin-top: 10px;
+      justify-content: center;
+      align-items: center;
+      /* margin-left: 110px; */
     }
     
     .csBox center {
@@ -120,6 +124,64 @@
       color: white;
       text-decoration: none;
       font-size: 16px;
+      margin-top: 5px;
+      padding:5px;
+    }
+
+    .contactUs {
+      text-align: center;
+      align-items: center;
+      margin-left: auto;
+      color: white;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .customerService {
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      background-position: center;
+      background-repeat: repeat;
+      background-size: 100%;
+      background-color: white;
+    }
+
+    .contained {
+      display: flex;
+      flex-direction: column;
+    }
+    .csBox {
+      border-radius: 6px;
+      width: 217px;
+      height: auto;
+      background-color: white;
+      padding: 17px 21px;
+      margin-top: 10px;
+      justify-content: center;
+      align-items: center;
+      /* margin-left: 110px; */
+    }
+    
+    .csBox center {
+      padding-top: 10px;
+    }
+
+    .csBox p {
+      height: 60px;
+    }
+
+    .csBox button {
+      cursor: pointer;
+      justify-content: center;
+      background-color: #CC2424;
+      height: 52px;
+      width: auto;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      margin-top: 5px;
+      padding:5px;
     }
 
     .contactUs {
