@@ -155,29 +155,29 @@ function KalkulatorPajak() {
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="box">
-          <div className="umkmSection">
-            <h1>Pajak UMKM</h1>
-            <label>Omzet penghasilan dalam setahun :</label>
-            <input
-              type="number"
-              data-testid="umkm"
-              onChange={(e) => setOmzetValue(e.target.value)}
-            />
-            <div>
-              <Button
-                variant="contained"
-                onClick={handleOmzet}
-                data-testid="jumlahumkm"
-              >
-                Jumlah
-              </Button>
-            </div>
-            <div>
-              <p>Jumlah kisaran pajak yang harus dibayar:</p>
-              <div className="result">Rp. {omzetResult}</div>
+          <div className="box">
+            <div className="umkmSection">
+              <h1>Pajak UMKM</h1>
+              <label>Omzet penghasilan dalam setahun :</label>
+              <input
+                type="number"
+                data-testid="umkm"
+                onChange={(e) => setOmzetValue(e.target.value)}
+              />
+              <div>
+                <Button
+                  variant="contained"
+                  onClick={handleOmzet}
+                  data-testid="jumlahumkm"
+                >
+                  Jumlah
+                </Button>
+              </div>
+              <div>
+                <p>Jumlah kisaran pajak yang harus dibayar:</p>
+                <div className="result">Rp. {omzetResult}</div>
+              </div>
             </div>
           </div>
 
