@@ -10,9 +10,7 @@ function KalkulatorPajak() {
   const [penghasilan, setPenghasilan] = useState(0);
   const [bonus, setBonus] = useState(0);
   const [tanggungan, setTanggungan] = useState(0);
-  // const [hasil, setHasil] = useState(0);
   const [omzetValue, setOmzetValue] = useState(0);
-  // const [omzetResult, setOmzetResult] = useState(0);
 
   const hasil = useSelector((state) => state.hasil.value);
   const omzetResult = useSelector((state) => state.omzetResult.value);
@@ -53,8 +51,6 @@ function KalkulatorPajak() {
     if (gajiBersih < 50000000) {
       dispatch(calculate(0));
     } else {
-      // console.log(gajiBersih);
-
       if (total <= 50000000) {
         dispatch(calculate(addCommas(removeNonNumeric(total * 0.05))));
       } else if (total <= 300000000) {
@@ -83,8 +79,6 @@ function KalkulatorPajak() {
         );
       }
     }
-    // console.log(gajiBersih);
-    // console.log(setHasil);
   };
 
   const handleOmzet = () => {
@@ -104,7 +98,7 @@ function KalkulatorPajak() {
           </p>
         </div>
 
-        <div className="containing">
+        <div className="containing mt-3">
           <div className="box">
             <div className="karyawanSection">
               <h1>Pajak Karyawan</h1>
@@ -156,7 +150,7 @@ function KalkulatorPajak() {
             </div>
           </div>
 
-          <div className="box">
+          <div className="box mt-3 mb-3">
             <div className="umkmSection">
               <h1>Pajak UMKM</h1>
               <label>Omzet penghasilan dalam setahun :</label>
@@ -182,7 +176,7 @@ function KalkulatorPajak() {
           </div>
 
           <div
-            className="box"
+            className="box mb-5 pb-3"
             style={{ backgroundImage: `url(${PajakKendaraan})` }}
           >
             <div className="kendaraanSection">

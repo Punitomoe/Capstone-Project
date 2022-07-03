@@ -11,12 +11,12 @@ function About() {
     <div>
       <div className="tentangIndex">
         <h1>About Us</h1>
-        <div className="photoCard">
-          <img src={Dimas} width="220" height="300" alt="" />
-          <img src={Roma} width="220" height="300" alt="" />
-          <img src={Nauris} width="220" height="300" alt="" />
-          <img src={Rahmi} width="220" height="300" alt="" />
-          <img src={Yoram} width="220" height="300" alt="" />
+        <div className="photoCard p-4">
+          <img src={Dimas} className="mb-3" width="220" height="300" alt="" />
+          <img src={Roma} className="mb-3" width="220" height="300" alt="" />
+          <img src={Nauris} className="mb-3" width="220" height="300" alt="" />
+          <img src={Rahmi} className="mb-3" width="220" height="300" alt="" />
+          <img src={Yoram} className="mb-3" width="220" height="300" alt="" />
         </div>
       </div>
     </div>
