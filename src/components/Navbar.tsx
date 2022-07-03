@@ -5,7 +5,7 @@ import "../style/components/Navbar.css";
 const Navbar = () => {
   return (
     <>
-      <nav className="col-12 container d-flex justify-content-center  navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="col-12 container d-flex justify-content-center  navbar navbar-expand-lg navbar-light bg-light mb-2">
         <div className="container">
           <div>
             <Link to="/">

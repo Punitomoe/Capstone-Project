@@ -1,6 +1,6 @@
 .indexPajak {
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   margin-top: 0px;
@@ -145,9 +145,9 @@
 
 .kendaraanSection button {
   background-color: #1053ba;
-  height: 40px ;
-  width: 265px ;
-  margin-top: 150px ;
+  height: 40px;
+  width: 265px;
+  margin-top: 150px;
 }
 
 .kendaraanSection button:hover {
@@ -165,8 +165,8 @@
 
 @media only screen and (max-width: 1300px) {
   .indexPajak {
-    width: auto;
-    height: 200vh;
+    width: 100%;
+    height: auto;
     margin-top: 10px;
   }
   .containing {
@@ -191,22 +191,20 @@
     margin-top: auto;
   }
   .kendaraanSection button {
-    height: 40px ;
-    width: 300px ;
-    margin-top: auto ;
+    height: 40px;
+    width: 300px;
+    margin-top: auto;
   }
-  
 }
 
 @media only screen and (max-width: 800px) {
   .indexPajak {
     width: 100%;
-    height: 300vh;
+    height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 0px;
-    /* margin-bottom: 120px; */
   }
   .indexPajak button {
     cursor: pointer;
@@ -246,17 +244,16 @@
     width: 280px;
     height: auto;
     border-radius: 8px;
-    /* padding: 17px 21px; */
     margin: 2px;
   }
   .kendaraanSection a {
-    font-size: 12px ;
+    font-size: 12px;
     height: auto;
     margin-top: auto;
   }
   .kendaraanSection button {
-    height: 40px ;
-    width: 270px ;
-    margin-top: 170px ;
+    height: 40px;
+    width: 270px;
+    margin-top: 170px;
   }
 }

@@ -6,11 +6,15 @@ import { Link } from "react-router-dom";
 const AsuransiBPJS = () => {
   return (
     <>
-      <div className="indexKendaraan">
+      <div className="indexKendaraan mb-5 pb-5">
         <div className="breadcrumbs">
-          <Link to="/menu"> Menu </Link>
+          <Link to="/menu" className="breadcrumbs-link text-decoration-none">
+            Menu
+          </Link>
           <NavigateNextIcon />
-          <Link to="/menu/asuransi"> Asuransi </Link>
+          <Link to="/menu/asuransi" className="breadcrumbs-link">
+            Asuransi
+          </Link>
           <NavigateNextIcon />
           <p>Asuransi BPJS</p>
         </div>
@@ -27,8 +31,10 @@ const AsuransiBPJS = () => {
                 src="https://www.youtube.com/embed/XwBX-VHX2Y8"
               />
             </div>
-            <div className="content">
-              <h3>Bagaimana prosedur pendaftaran dan pembayaran?</h3>
+            <div className="content mt-2">
+              <h3 className="mb-4">
+                Bagaimana prosedur pendaftaran dan pembayaran?
+              </h3>
               <p>
                 BPJS atau Badan Penyelenggara Jaminan Sosial memiliki fungsi
                 sebagai penyelenggara kesehatan masyarakat yang memiliki sistem
@@ -38,13 +44,17 @@ const AsuransiBPJS = () => {
                 yang baru lahir? dari berbagai macam latar belakang dari
                 pendaftaran BPJS ini, proses administrasi pendaftaran pada
                 setiap kanal layanan administrasi dilakukan dengan ketentuan:
-                <br></br>1. Mengisi FDIPE (Formulir Daftar Isian Peserta
-                Elektronik);
-                <br></br>2. Melengkapi persyaratan administrasi sesuai dengan
-                layanan yang dibutuhkan; dan
-                <br></br>3. Memberikan persetujuan layanan administrasi. .{" "}
-                <br></br>
-                <p>
+                <div className="mt-2">
+                  1. Mengisi FDIPE (Formulir Daftar Isian Peserta Elektronik)
+                </div>
+                <div className="mt-1">
+                  2. Melengkapi persyaratan administrasi sesuai dengan layanan
+                  yang dibutuhkan; dan
+                </div>
+                <div className="mt-1">
+                  3. Memberikan persetujuan layanan administrasi.
+                </div>
+                <p className="mt-4">
                   BPJS atau Badan Penyelenggara Jaminan Sosial memiliki fungsi
                   sebagai penyelenggara kesehatan masyarakat yang memiliki
                   sistem yang kompleks dan bertingkat. Nah kalau sobat redi mau
@@ -66,15 +76,12 @@ const AsuransiBPJS = () => {
                     <br />
                   </ul>
                   <p>
-                    {" "}
                     Persyaratan administrasi kepesertaan sesuai dengan ketentuan
                     masing-masing jenis kepesertaan nah maturedi menyarankan
-                    buat daftar melalui Mobile JKN aja! mengutip dari CNBC.com,
+                    buat daftar melalui Mobile JKN aja! Mengutip dari CNBC.com,
                     pertama sobat unduh aplikasi Mobile JKN di smartphone, lalu
-                    klik "Daftar"
-                    <br />
-                    <br />
-                    <li>
+                    klik "Daftar", kemudian
+                    <li className="mt-2">
                       Masukkan NIK KTP, ketik kode captcha. Halaman smartphone
                       akan menampilkan daftar data keluarga dan calon peserta
                       BPJS Kesehatan
@@ -97,10 +104,10 @@ const AsuransiBPJS = () => {
                       Peserta akan mendapatkan virtual account untuk pembayaran
                       premi
                     </li>
-                    <li>
+                    <li className="mb-3">
                       Pembayaran iuran bisa dilakukan melalui e-commerce, mobile
                       banking, ATM, kantor pos, atau di berbagai merchant BPJS
-                      Kesehatan seperti minimarket
+                      Kesehatan seperti minimarket.
                     </li>
                     Jika sudah selesai mendaftar BPJS Kesehatan secara online
                     dan telah melakukan pembayaran, maka sobat udah resmi
@@ -113,35 +120,42 @@ const AsuransiBPJS = () => {
                   sih manfaat yang bisa kita dapetin? dan sobat tau nggak kalau
                   BPJS Kesehatan udah jadi syarat buat jual beli tanah? 😱 Nah
                   mengutip dari Kompas dan Alinea id, manfaat dari BPJS itu
-                  ragam banget! yaitu .<br />
-                  <b>1. Semua penyakit ditanggung!</b>
-                  <br />
+                  ragam banget! yaitu:
+                  <div className="mt-3 mb-2">
+                    <b>1. Semua penyakit ditanggung!</b>
+                  </div>
                   Tidak terbatas pada penyakit a, b, c, atau penyakit apapun
                   tapi semua penyakit bakal ditanggung sama BPJS ini, berbeda
                   dengan asuransi swasta lain yang seringkali menciptakan
                   batasan-batasan hanya pada penyakit tertentu
-                  <br />
-                  <b>2. Biaya ringan</b>
-                  <br />
+                  <div className="mt-3 mb-2">
+                    <b>2. Biaya ringan</b>
+                  </div>
                   BPJS sendiri memiliki tiga tingkat kelas, I, II, dan III
                   tergantung nilai pembayarannya. per tahun 2022, pembayaran
-                  BPJS kesehatan sesuai kelasnya adalah:<br></br> Kelas I : Rp
-                  150.000 /peserta
-                  <br></br>Kelas II : Rp 100.000 /peserta <br />
-                  Kelas III : Rp 35.000 /peserta <br />
+                  BPJS kesehatan sesuai kelasnya adalah:
+                  <div className="mt-1 mb-1">
+                    Kelas I : Rp. 150.000 /peserta
+                  </div>
+                  <div className="mt-1 mb-1">
+                    Kelas II : Rp. 100.000 /peserta
+                  </div>
+                  <div className="mt-1 mb-3">
+                    Kelas III : Rp. 35.000 /peserta
+                  </div>
                   jika sobat bandingkan dengan asuransi swasta lain, harga di
                   atas jauh lebih terjangkau dan bisa menjamin ke banyak
                   kalangan!.
-                  <br />
-                  <b>3. Pembayaran yang Fleksibel</b>
-                  <br />
+                  <div className="mt-3 mb-2">
+                    <b>3. Pembayaran yang fleksibel</b>
+                  </div>
                   Pembayaran BPJS kesehatan sendiri memiliki banyak cara
                   pembayaran, tidak hanya membayar di tempat atau transfer bank
                   saja. Pembayaran BPJS kesehatan dapat dilakukan bahkan
                   menggunakan Tokopedia lho!
-                  <br />
-                  <b>4. Fasilitas</b>
-                  <br />
+                  <div className="mt-3 mb-2">
+                    <b>4. Fasilitas</b>
+                  </div>
                   Terdapat pelayanan medis berupa fasilitas kesehatan tingkat
                   pertama yang bersifat non spesialis yang meliputi rawat inap
                   dan jalan, biasanya berupa puskesmas, unit kesehatan kampus,

@@ -20,7 +20,7 @@ function CustomerService() {
               <Avatar alt="" src={admin} sx={{ width: 56, height: 56 }} />
             </center>
             <div>
-              <h1>Hubungi TIm Pelayanan Kami</h1>
+              <h1>Hubungi Tim Pelayanan Kami</h1>
             </div>
             <div>
               <p>Kami akan membantu permasalahan yang kami hadapi.</p>

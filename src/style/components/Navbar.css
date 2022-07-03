@@ -11,6 +11,10 @@
   font-size: 16px;
   font-weight: 600;
 }
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active {
+  color: #cc2424;
+}
 
 .navbar-brand {
   width: 130px;

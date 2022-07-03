@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const AsuransiKendaraan = () => {
   return (
     <>
-      <div className="indexKendaraan">
+      <div className="indexKendaraan mb-5 pb-5">
         <div className="breadcrumbs">
           <Link to="/menu"> Menu </Link>
           <NavigateNextIcon />
