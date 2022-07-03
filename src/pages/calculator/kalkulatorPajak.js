@@ -2,14 +2,21 @@ import "../../style/pages/kalkulatorPajak.css";
 import PajakKendaraan from "../../assets/PajakKendaraan.png";
 import Button from "@mui/material/Button";
 import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { calculate } from "../../features/calculator/hasilSlice";
+import { calculate as calculateOmzet } from "../../features/calculator/omzetResultSlice";
 
 function KalkulatorPajak() {
   const [penghasilan, setPenghasilan] = useState(0);
   const [bonus, setBonus] = useState(0);
   const [tanggungan, setTanggungan] = useState(0);
-  const [hasil, setHasil] = useState(0);
+  // const [hasil, setHasil] = useState(0);
   const [omzetValue, setOmzetValue] = useState(0);
-  const [omzetResult, setOmzetResult] = useState(0);
+  // const [omzetResult, setOmzetResult] = useState(0);
+
+  const hasil = useSelector((state) => state.hasil.value);
+  const omzetResult = useSelector((state) => state.omzetResult.value);
+  const dispatch = useDispatch();
 
   const addCommas = (num) =>
     num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -44,27 +51,33 @@ function KalkulatorPajak() {
     let tanggunganAkhir = parseInt(tanggungan) + 54000000;
     let total = gajiBersih - tanggunganAkhir;
     if (gajiBersih < 50000000) {
-      setHasil(0);
+      dispatch(calculate(0));
     } else {
-      console.log(gajiBersih);
+      // console.log(gajiBersih);
 
       if (total <= 50000000) {
-        setHasil(addCommas(removeNonNumeric(total * 0.05)));
+        dispatch(calculate(addCommas(removeNonNumeric(total * 0.05))));
       } else if (total <= 300000000) {
-        setHasil(
-          addCommas(removeNonNumeric((total - 50000000) * 0.15 + 2500000))
+        dispatch(
+          calculate(
+            addCommas(removeNonNumeric((total - 50000000) * 0.15 + 2500000))
+          )
         );
       } else if (total <= 750000000) {
-        setHasil(
-          addCommas(
-            removeNonNumeric((total - 300000000) * 0.25 + 25000000 + 37500000)
+        dispatch(
+          calculate(
+            addCommas(
+              removeNonNumeric((total - 300000000) * 0.25 + 25000000 + 37500000)
+            )
           )
         );
       } else {
-        setHasil(
-          addCommas(
-            removeNonNumeric(
-              (total - 750000000) * 0.3 + 25000000 + 37500000 + 125000000
+        dispatch(
+          calculate(
+            addCommas(
+              removeNonNumeric(
+                (total - 750000000) * 0.3 + 25000000 + 37500000 + 125000000
+              )
             )
           )
         );
@@ -76,7 +89,7 @@ function KalkulatorPajak() {
 
   const handleOmzet = () => {
     if (omzetValue < 4800000000) {
-      setOmzetResult(addCommas(removeNonNumeric(omzetValue * 0.005)));
+      dispatch(calculateOmzet(addCommas(removeNonNumeric(omzetValue * 0.005))));
     }
   };
 
@@ -99,24 +112,40 @@ function KalkulatorPajak() {
               <input
                 id="penghasilan"
                 type="number"
+                data-testid="penghasilan"
                 onChange={(e) => setPenghasilan(e.target.value)}
               />
               <label>Bonus THR dan sebagainya :</label>
               <input
                 id="thr"
                 type="number"
+                data-testid="bonus"
                 onChange={(e) => setBonus(e.target.value)}
               />
               <label>Status Perkawinan/Tanggungan</label>
-              <select onChange={handleTanggungan}>
-                <option>TK/0</option>
-                <option>K/0</option>
-                <option>K/1</option>
-                <option>K/2</option>
-                <option>K/3</option>
+              <select onChange={handleTanggungan} data-testid="select">
+                <option data-testid="select-option" value="TK/0">
+                  TK/0
+                </option>
+                <option data-testid="select-option" value="K/0">
+                  K/0
+                </option>
+                <option data-testid="select-option" value="K/1">
+                  K/1
+                </option>
+                <option data-testid="select-option" value="K/2">
+                  K/2
+                </option>
+                <option data-testid="select-option" value="K/3">
+                  K/3
+                </option>
               </select>
               <div>
-                <Button variant="contained" onClick={hitungHasil}>
+                <Button
+                  variant="contained"
+                  onClick={hitungHasil}
+                  data-testid="jumlahkaryawan"
+                >
                   Jumlah
                 </Button>
               </div>
@@ -126,24 +155,29 @@ function KalkulatorPajak() {
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="box">
-            <div className="umkmSection">
-              <h1>Pajak UMKM</h1>
-              <label>Omzet penghasilan dalam setahun :</label>
-              <input
-                type="number"
-                onChange={(e) => setOmzetValue(e.target.value)}
-              />
-              <div>
-                <Button variant="contained" onClick={handleOmzet}>
-                  Jumlah
-                </Button>
-              </div>
-              <div>
-                <p>Jumlah kisaran pajak yang harus dibayar:</p>
-                <div className="result">Rp. {omzetResult}</div>
-              </div>
+        <div className="box">
+          <div className="umkmSection">
+            <h1>Pajak UMKM</h1>
+            <label>Omzet penghasilan dalam setahun :</label>
+            <input
+              type="number"
+              data-testid="umkm"
+              onChange={(e) => setOmzetValue(e.target.value)}
+            />
+            <div>
+              <Button
+                variant="contained"
+                onClick={handleOmzet}
+                data-testid="jumlahumkm"
+              >
+                Jumlah
+              </Button>
+            </div>
+            <div>
+              <p>Jumlah kisaran pajak yang harus dibayar:</p>
+              <div className="result">Rp. {omzetResult}</div>
             </div>
           </div>
 

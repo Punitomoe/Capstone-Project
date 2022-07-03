@@ -21,7 +21,7 @@ const PajakUsaha = () => {
             </div>
             <div className="vidio">
               <iframe
-                title="Vidio Edukasi Pajak Kendaraan Bermotor"
+                title="Penghitungan PPh Orang Pribadi Usaha/Pekerjaan Bebas"
                 width="724"
                 height="385"
                 src="https://www.youtube.com/embed/SuYBHrVe1gg"

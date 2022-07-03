@@ -1,8 +1,7 @@
-import { render, fireEvent, waitFor, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { BrowserRouter, Router } from "react-router-dom";
-import { createMemoryHistory } from "history";
-import CustomerService from "../pages/CustomerService";
+import { BrowserRouter } from "react-router-dom";
+import CustomerService from "../pages/cs/CustomerService";
 
 test("should render title text", () => {
   render(
