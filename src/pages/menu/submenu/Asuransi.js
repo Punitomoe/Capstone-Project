@@ -27,7 +27,9 @@ function Asuransi() {
                   />
                 </div>
                 <div className="p-2">
-                  <h5 className="card-sub-title text-center">Asuransi Mobil</h5>
+                  <h5 className="card-sub-title text-center">
+                    Asuransi Kendaraan
+                  </h5>
                 </div>
               </div>
             </Link>

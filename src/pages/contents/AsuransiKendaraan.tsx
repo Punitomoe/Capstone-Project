@@ -28,9 +28,10 @@ const AsuransiKendaraan = () => {
               />
             </div>
             <div className="content">
-              <h3>Bagaimana prosedur pendaftaran dan pembayaran?</h3>
+              <h3 className="pt-4 mt-3">
+                Bagaimana prosedur pendaftaran dan pembayaran?
+              </h3>
               <p>
-                {" "}
                 Di Mana Mendapatkan Asuransi Ini? sobat dapat memperoleh
                 asuransi ini melalui:
                 <br />
@@ -51,7 +52,7 @@ const AsuransiKendaraan = () => {
                 biasanya dapat dibayar secara daring melalui e-commerce ataupun
                 transfer bank.
               </p>
-              <h3>
+              <h3 className="pt-4 mt-3">
                 Apa itu asuransi kendaraan dan manfaat apa aja yang didapat dari
                 asuransi kendaraan?
               </h3>
@@ -67,9 +68,10 @@ const AsuransiKendaraan = () => {
                 sama sobat redi ketika udah mendaftarkan kendaraan oleh
                 asuransi?
               </p>
-              <b>Jenis Pertanggungan Asuransi Kendaraan Bermotor</b>
+              <h3 className="pt-4 mt-3">
+                Jenis Pertanggungan Asuransi Kendaraan Bermotor
+              </h3>
               <p>
-                {" "}
                 Terdapat dua jenis pertanggungan asuransi kendaraan bermotor
                 yaitu Comprehensive (All Risk) dan Total Loss Only (TLO).
               </p>
@@ -97,10 +99,10 @@ const AsuransiKendaraan = () => {
                   Tanggung jawab hukum (TJH) terhadap kerugian pihak ketiga.
                 </li>
               </ul>
-              <b>
+              <h3 className="pt-4 mt-3">
                 Manfaat Asuransi Kendaraan Bermotor Dengan memiliki asuransi
                 kendaraan bermotor
-              </b>
+              </h3>
               <p> Anda dapat memperoleh manfaat sebagai berikut:</p>
               <ul>
                 <li>
@@ -111,9 +113,8 @@ const AsuransiKendaraan = () => {
                   terjadi peristiwa kerugian.
                 </li>
               </ul>
-              <b>Perhitungan Premi</b>
+              <h3 className="pt-4 mt-3">Perhitungan Premi</h3>
               <p>
-                {" "}
                 Sebagai pemilik polis sobat redi memiliki kewajiban untuk
                 membayar sejumlah premi kepada perusahaan asuransi yang telah
                 menerima risiko Anda. Besarnya nilai premi ditetapkan oleh
@@ -129,7 +130,7 @@ const AsuransiKendaraan = () => {
                 <li>Pengalaman peristiwa kerugian yang pernah dialami.</li>
                 <li>Jenis pertanggungan.</li>
               </ul>
-              <b>Hal-hal yang Perlu Diperhatikan</b>
+              <h3 className="pt-4 mt-3">Hal-hal yang Perlu Diperhatikan</h3>
               <ul>
                 <li>Tindakan sengaja dari tertanggung.</li>
                 <li>Melanggar rambu-rambu lalu-lintas.</li>

@@ -79,9 +79,9 @@ const PajakKendaraan = () => {
                 Pembayaran pajak kendaraan dibagi menjadi dua, yaitu pembayaran
                 tahunan dan pembayaran lima tahun sekali yang sekaligus
                 penggantian pelat kendaraan.
-                <br />
-                <b>Pajak Kendaraan Bermotor Tahunan</b>
-                <br />
+                <h5 className="mt-3">
+                  <b>Pajak Kendaraan Bermotor Tahunan</b>
+                </h5>
                 Pajak Kendaraan Bermotor Tahunan adalah pajak rutin yang harus
                 dibayarkan setiap tahunnya seperti layaknya Pajak Penghasilan
                 (PPh). Bisa dibayarkan secara offline yaitu datang ke samsat
@@ -90,8 +90,9 @@ const PajakKendaraan = () => {
                 banking juga sudah tersedia. namun untuk kertas stnk tetap harus
                 datang ke samsat untuk dapat yang baru.
                 <br />
-                <b>Pajak Kendaraan Bermotor</b>
-                <br />
+                <h5 className="mt-3">
+                  <b>Pajak Kendaraan Bermotor</b>
+                </h5>
                 Lima Tahunan Pajak Kendaraan Bermotor Lima Tahunan adalah pajak
                 rutin yang harus dibayarkan setiap lima tahun sekali. Pajak ini
                 ditandai dengan pergantian pelat nomor kendaraan dan STNK.

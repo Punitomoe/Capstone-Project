@@ -50,8 +50,7 @@ const LegalDokumenKTP = () => {
                 7. Menunggu percetakan selesai, sekitar dua minggu, namun
                 biasanya bisa lebih cepat.
                 <br />
-                <p>
-                  {" "}
+                <p className="mt-4">
                   Nah kalau sobat hendak memproses dengan cara yang online
                   dilakukan dengan sebagai berikut:
                   <li>Mengakses aplikasi Dukcapil Online resmi.</li>
@@ -66,10 +65,10 @@ const LegalDokumenKTP = () => {
                     Menyerahkan KTP lama dan mengambil KTP baru di kecamatan
                     setempat.
                   </li>
-                  Berikut syarat umum membuat KTP baru:
-                  <br></br>- Berusia minimal 17 tahun Fotokopi Kartu Keluarga
-                  (KK).
-                  <br />
+                  <div className="mt-4">
+                    Berikut syarat umum membuat KTP baru: <br></br>- Berusia
+                    minimal 17 tahun Fotokopi Kartu Keluarga (KK).
+                  </div>
                   <br />
                   Sedangkan syarat penduduk asing yang memiliki izin tinggal
                   tetap, sebagai berikut:
@@ -82,8 +81,10 @@ const LegalDokumenKTP = () => {
               </p>
               <h3>Mengapa kita harus membuat ktp? </h3>
               <p>
-                Kenapa sih kita harus membuat KTP jika sudah berusia 17 tahun?
-                Berikut adalah alasan mengapa KTP itu perlu
+                <div className="mt-1">
+                  Kenapa sih kita harus membuat KTP jika sudah berusia 17 tahun?
+                  Berikut adalah alasan mengapa KTP itu perlu:
+                </div>
                 <br />
                 1. Sebagai tanda pengenal atau bukti yang sah.
                 <br />
