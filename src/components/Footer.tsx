@@ -14,6 +14,8 @@ const Footer = () => {
               <img
                 src={require("../assets/logoFooter.png")}
                 className="footer-img"
+                height="40"
+                width="60"
                 alt=""
               />
               <h6> &copy; 2022 maturedi.com </h6>
