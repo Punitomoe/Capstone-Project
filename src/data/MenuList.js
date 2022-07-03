@@ -1,6 +1,6 @@
-import Pajak from "../assets/menu/Pajak.jpg";
-import Asuransi from "../assets/menu/Asuransi.jpg";
-import Legal from "../assets/menu/Legal.jpg";
+import Pajak from "../assets/menu/Pajak.png";
+import Asuransi from "../assets/menu/Asuransi.png";
+import Legal from "../assets/menu/Legal.png";
 
 export const MenuList = [
   {

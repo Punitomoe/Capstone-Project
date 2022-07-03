@@ -12,6 +12,8 @@ const Navbar = () => {
               <img
                 src={require("../assets/Logo.png")}
                 className="navbar-brand"
+                height="40"
+                width="100"
                 alt=""
               />
             </Link>
