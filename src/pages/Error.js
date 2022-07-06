@@ -12,9 +12,9 @@ function Error() {
         style={{ backgroundImage: `url(${ErrorBackground})` }}
       >
         <div className="indexGrid">
-          <div className="gridItem item1">404 Page Not Found!</div>
+          <div className="gridItem item1">404 Page Under Construction!</div>
           <div className="gridItem item2">
-            We Can't Seem Find The Page You're Looking For
+            The Page You're Looking For is Under Construction
           </div>
           <Link to="/" className="gridItem item3">
             <Button variant="contained">Go Back</Button>

@@ -23,7 +23,7 @@ function CustomerService() {
               <h1>Hubungi Tim Pelayanan Kami</h1>
             </div>
             <div>
-              <p>Kami akan membantu permasalahan yang kami hadapi.</p>
+              <p>Kami akan membantu permasalahan yang kamu hadapi.</p>
             </div>
             <div>
               <center>
@@ -50,7 +50,7 @@ function CustomerService() {
             <div>
               <p>
                 Lihat pertanyaan-pertayaan yang sering ditanyakan pengguna
-                lain!.
+                lain.
               </p>
             </div>
             <center>

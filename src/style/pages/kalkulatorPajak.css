@@ -154,7 +154,7 @@
 }
 
 .result {
-  height: 30px;
+  height: auto;
   background-color: #01909e;
   font-size: 20px;
   padding: 2px;

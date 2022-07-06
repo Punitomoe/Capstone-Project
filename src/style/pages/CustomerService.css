@@ -61,11 +61,12 @@
     cursor: pointer;
     justify-content: center;
     background-color: #CC2424;
-    height: 52px;
-    width: 359px;
+    height: auto;
+    width: auto;
     color: white;
     text-decoration: none;
     font-size: 20px;
+    padding: 5px;
   }
 
   .csBox button:hover {
@@ -75,6 +76,7 @@
   }
 
   .csBox a {
+    padding: 3px;
     color: white;
     text-decoration: none;
   }
