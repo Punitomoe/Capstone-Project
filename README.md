@@ -18,7 +18,8 @@ Project This website contains information on taxation, insurance, and other lega
 6. Eslint
 7. Typescript in Content Page
 8. Flex and Grid
-9. We also deploy in Vercel, you can access ( maturedi.vercel.app )
+9. Animate On Scroll
+10. We also deploy in Vercel, you can access ( maturedi.vercel.app )
 
 ## About Us :
 1. Dimas Julio Cessar --> dimasjc08@gmail.com
@@ -60,12 +61,7 @@ If you are using npm, run from the root the repository
 npm run install
 ```
 
-### Step 4 - Go to directory
-```
-cd capstone-project
-```
-
-### Step 6 Run an App
+### Step 4 Run an App
 One the dependencies are installed, you can run the app for a lesson
 
 ``` 
