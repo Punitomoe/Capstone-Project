@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { BrowserRouter } from "react-router-dom";
-import LegalDokumenSIM from "../pages/LegalDokumenSIM";
+import LegalDokumenSIM from "../pages/contents/LegalDokumenSIM";
 
 test("should render title text", () => {
   render(

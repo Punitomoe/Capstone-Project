@@ -9,6 +9,6 @@ test("should render title text", () => {
       <Asuransi />
     </BrowserRouter>
   );
-  expect(screen.getByText(/bpjs mobil/i)).toBeInTheDocument();
-  expect(screen.getByText(/asuransi mobil/i)).toBeInTheDocument();
+  expect(screen.getByText(/bpjs kesehatan/i)).toBeInTheDocument();
+  expect(screen.getByText(/asuransi kendaraan/i)).toBeInTheDocument();
 });
