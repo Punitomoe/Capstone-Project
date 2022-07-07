@@ -45,7 +45,6 @@ From the command line, clone the repository
 
 ``` 
 $ git clone https://github.com/Punitomoe/capstone-project.git
-
 ```
 
 ### Step 3 - Install Each Lesson
