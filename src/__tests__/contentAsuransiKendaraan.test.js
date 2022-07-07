@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { BrowserRouter } from "react-router-dom";
-import AsuransiKendaraan from "../pages/AsuransiKendaraan";
+import AsuransiKendaraan from "../pages/contents/AsuransiKendaraan";
 
 test("should render title text", () => {
   render(

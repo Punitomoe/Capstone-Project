@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { BrowserRouter } from "react-router-dom";
-import PajakKaryawan from "../pages/PajakKaryawan";
+import PajakKaryawan from "../pages/contents/PajakKaryawan";
 
 test("should render title text", () => {
   render(

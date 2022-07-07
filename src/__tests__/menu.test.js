@@ -22,10 +22,10 @@ test("should update history", () => {
       <Menu />
     </Router>
   );
-  fireEvent.click(screen.getByText(/kenali pajak/i));
-  //   fireEvent.click(screen.getByText(/kenali asuransi/i));
-  //   fireEvent.click(screen.getByText(/kenali legal dokumen/i));
+  fireEvent.click(screen.getByText(/kenali perpajakan/i));
   expect(history.location.pathname).toEqual("/menu/pajak");
-  //   expect(history.location.pathname).toEqual("/menu/asuransi");
-  //   expect(history.location.pathname).toEqual("/menu/dokumen");
+  fireEvent.click(screen.getByText(/kenali asuransi/i));
+  expect(history.location.pathname).toEqual("/menu/asuransi");
+  fireEvent.click(screen.getByText(/kenali legal dokumen/i));
+  expect(history.location.pathname).toEqual("/menu/dokumen");
 });

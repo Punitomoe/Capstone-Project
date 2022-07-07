@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { BrowserRouter } from "react-router-dom";
-import LegalDokumenKTP from "../pages/LegalDokumenKTP";
+import LegalDokumenKTP from "../pages/contents/LegalDokumenKTP";
 
 test("should render title text", () => {
   render(

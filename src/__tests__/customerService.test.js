@@ -9,7 +9,7 @@ test("should render title text", () => {
       <CustomerService />
     </BrowserRouter>
   );
-  expect(screen.getByText(/Frequently Asked Questions/i)).toBeInTheDocument();
+  expect(screen.getByText(/Hubungi Tim Pelayanan Kami/i)).toBeInTheDocument();
 });
 
 test("should go to some link", () => {
